@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huntsville Business Directory - Alabama Business Directory</title>
+  <meta name="description" content="Browse trusted businesses in Huntsville, Alabama. Find legal, medical, home services, accounting, engineering, and food &amp; entertainment businesses.">
+  <link rel="canonical" href="huntsville.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Huntsville Business Directory</h1>
+      <p class="tagline">Trusted businesses in the Rocket City</p>
+    </div>
+  </header>
+
+  <nav class="filter-bar">
+    <div class="container">
+      <div class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">All Cities</a> <span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span> <span class="breadcrumb-current">Huntsville</span>
+      </div>
+      <div class="filter-group">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter" onchange="filterCategory()">
+          <option value="all">All Categories</option>
+          <option value="legal">Legal</option>
+          <option value="medical">Medical</option>
+          <option value="home-services">Home Services</option>
+          <option value="accounting">Accounting</option>
+          <option value="engineering">Engineering</option>
+          <option value="food-entertainment">Food &amp; Entertainment</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container directory">
+
+    <section class="city-section" data-city="huntsville">
+      <h2 class="city-heading">All Huntsville Businesses</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Rocket City Law Group</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 200 Jefferson St N, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0101</p>
+            <p><strong>Email:</strong> info@rocketcitylaw.example.com</p>
+            <p><strong>Website:</strong> www.rocketcitylaw.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Margaret Sullivan</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">margaret.sullivan@rocketcitylaw.example.com</span> | <span class="contact-detail">(256) 555-0102</span></li>
+              <li><span class="person-name">David Chen</span> &mdash; Senior Associate<br>
+                <span class="contact-detail">david.chen@rocketcitylaw.example.com</span> | <span class="contact-detail">(256) 555-0103</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">North Alabama Family Medicine</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 808 Turner Ave SW, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0201</p>
+            <p><strong>Email:</strong> appointments@nafm.example.com</p>
+            <p><strong>Website:</strong> www.nafm.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Angela Reeves</span> &mdash; Chief Physician<br>
+                <span class="contact-detail">angela.reeves@nafm.example.com</span> | <span class="contact-detail">(256) 555-0202</span></li>
+              <li><span class="person-name">James Holbrook</span> &mdash; Office Manager<br>
+                <span class="contact-detail">james.holbrook@nafm.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Tennessee Valley Home Repair</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1425 Meridian St N, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0301</p>
+            <p><strong>Email:</strong> service@tvhomerepair.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Bobby Caldwell</span> &mdash; Owner / General Contractor<br>
+                <span class="contact-detail">bobby@tvhomerepair.example.com</span> | <span class="contact-detail">(256) 555-0302</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Cummings &amp; Associates CPAs</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 600 Boulevard South SW, Huntsville, AL 35802</p>
+            <p><strong>Phone:</strong> (256) 555-0401</p>
+            <p><strong>Email:</strong> office@cummingscpa.example.com</p>
+            <p><strong>Website:</strong> www.cummingscpa.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Patricia Cummings</span> &mdash; Managing CPA<br>
+                <span class="contact-detail">patricia@cummingscpa.example.com</span> | <span class="contact-detail">(256) 555-0402</span></li>
+              <li><span class="person-name">Steven Nguyen</span> &mdash; Tax Specialist<br>
+                <span class="contact-detail">steven@cummingscpa.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Redstone Engineering Solutions</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 3322 Memorial Pkwy SW, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0501</p>
+            <p><strong>Email:</strong> contact@redstoneeng.example.com</p>
+            <p><strong>Website:</strong> www.redstoneeng.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">William Park</span> &mdash; Principal Engineer<br>
+                <span class="contact-detail">william.park@redstoneeng.example.com</span> | <span class="contact-detail">(256) 555-0502</span></li>
+              <li><span class="person-name">Laura Kim</span> &mdash; Project Manager<br>
+                <span class="contact-detail">laura.kim@redstoneeng.example.com</span> | <span class="contact-detail">(256) 555-0503</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Cotton Row Kitchen &amp; Bar</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 100 Southside Square, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0601</p>
+            <p><strong>Email:</strong> reservations@cottonrowkb.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Chef Marcus Tate</span> &mdash; Owner / Executive Chef<br>
+                <span class="contact-detail">marcus@cottonrowkb.example.com</span> | <span class="contact-detail">(256) 555-0602</span></li>
+              <li><span class="person-name">Danielle Odom</span> &mdash; Events Coordinator<br>
+                <span class="contact-detail">danielle@cottonrowkb.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <nav class="city-nav" aria-label="Other cities">
+      <h3 class="city-nav-heading">Browse Other Cities</h3>
+      <ul class="city-nav-list">
+        <li><a href="birmingham.html">Birmingham</a></li>
+        <li><a href="montgomery.html">Montgomery</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="tuscaloosa.html">Tuscaloosa</a></li>
+      </ul>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Alabama Business Directory &copy; 2026. All dummy data shown is for demonstration purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterCategory() {
+      var category = document.getElementById('category-filter').value;
+      var cards = document.querySelectorAll('.business-card');
+      var noResults = document.getElementById('no-results');
+
+      var visibleCount = 0;
+      cards.forEach(function(card) {
+        var match = (category === 'all' || card.getAttribute('data-category') === category);
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? '' : 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>

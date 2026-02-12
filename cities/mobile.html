@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Business Directory - Alabama Business Directory</title>
+  <meta name="description" content="Browse trusted businesses in Mobile, Alabama. Find legal, medical, home services, accounting, engineering, and food &amp; entertainment businesses.">
+  <link rel="canonical" href="mobile.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Mobile Business Directory</h1>
+      <p class="tagline">Trusted businesses in the Port City</p>
+    </div>
+  </header>
+
+  <nav class="filter-bar">
+    <div class="container">
+      <div class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">All Cities</a> <span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span> <span class="breadcrumb-current">Mobile</span>
+      </div>
+      <div class="filter-group">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter" onchange="filterCategory()">
+          <option value="all">All Categories</option>
+          <option value="legal">Legal</option>
+          <option value="medical">Medical</option>
+          <option value="home-services">Home Services</option>
+          <option value="accounting">Accounting</option>
+          <option value="engineering">Engineering</option>
+          <option value="food-entertainment">Food &amp; Entertainment</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container directory">
+
+    <section class="city-section" data-city="mobile">
+      <h2 class="city-heading">All Mobile Businesses</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Gulf Coast Legal Services</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 205 Government St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 555-0101</p>
+            <p><strong>Email:</strong> info@gulfcoastlegal.example.com</p>
+            <p><strong>Website:</strong> www.gulfcoastlegal.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Evelyn Marsh</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">evelyn.marsh@gulfcoastlegal.example.com</span> | <span class="contact-detail">(251) 555-0102</span></li>
+              <li><span class="person-name">Richard Coleman</span> &mdash; Litigation Attorney<br>
+                <span class="contact-detail">richard.coleman@gulfcoastlegal.example.com</span> | <span class="contact-detail">(251) 555-0103</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Azalea City Urgent Care</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 3100 Dauphin St, Mobile, AL 36606</p>
+            <p><strong>Phone:</strong> (251) 555-0201</p>
+            <p><strong>Email:</strong> care@azaleaurgent.example.com</p>
+            <p><strong>Website:</strong> www.azaleaurgent.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Samuel Ortega</span> &mdash; Medical Director<br>
+                <span class="contact-detail">samuel.ortega@azaleaurgent.example.com</span> | <span class="contact-detail">(251) 555-0202</span></li>
+              <li><span class="person-name">Brenda Lewis</span> &mdash; Head Nurse<br>
+                <span class="contact-detail">brenda.lewis@azaleaurgent.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Port City HVAC &amp; Electrical</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 950 Schillinger Rd S, Mobile, AL 36695</p>
+            <p><strong>Phone:</strong> (251) 555-0301</p>
+            <p><strong>Email:</strong> service@portcityhvac.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Frank Delacroix</span> &mdash; Owner / Master Electrician<br>
+                <span class="contact-detail">frank@portcityhvac.example.com</span> | <span class="contact-detail">(251) 555-0302</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Bayou Bookkeeping &amp; Tax</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 61 St. Joseph St, Suite 300, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 555-0401</p>
+            <p><strong>Email:</strong> info@bayoubookkeeping.example.com</p>
+            <p><strong>Website:</strong> www.bayoubookkeeping.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Catherine Thibodaux</span> &mdash; Owner / CPA<br>
+                <span class="contact-detail">catherine@bayoubookkeeping.example.com</span> | <span class="contact-detail">(251) 555-0402</span></li>
+              <li><span class="person-name">Jerome Harris</span> &mdash; Staff Accountant<br>
+                <span class="contact-detail">jerome@bayoubookkeeping.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Mobile Bay Civil Engineers</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1204 Beltline Hwy, Mobile, AL 36609</p>
+            <p><strong>Phone:</strong> (251) 555-0501</p>
+            <p><strong>Email:</strong> projects@mobilebayeng.example.com</p>
+            <p><strong>Website:</strong> www.mobilebayeng.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">George Patterson, PE</span> &mdash; Senior Engineer<br>
+                <span class="contact-detail">george.patterson@mobilebayeng.example.com</span> | <span class="contact-detail">(251) 555-0502</span></li>
+              <li><span class="person-name">Amy Tran</span> &mdash; Environmental Specialist<br>
+                <span class="contact-detail">amy.tran@mobilebayeng.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Mardi Gras Eats &amp; Beats</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 309 Dauphin St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 555-0601</p>
+            <p><strong>Email:</strong> bookings@mardigraseats.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Monique Boudreaux</span> &mdash; Owner / General Manager<br>
+                <span class="contact-detail">monique@mardigraseats.example.com</span> | <span class="contact-detail">(251) 555-0602</span></li>
+              <li><span class="person-name">Keith Washington</span> &mdash; Entertainment Booker<br>
+                <span class="contact-detail">keith@mardigraseats.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <nav class="city-nav" aria-label="Other cities">
+      <h3 class="city-nav-heading">Browse Other Cities</h3>
+      <ul class="city-nav-list">
+        <li><a href="huntsville.html">Huntsville</a></li>
+        <li><a href="birmingham.html">Birmingham</a></li>
+        <li><a href="montgomery.html">Montgomery</a></li>
+        <li><a href="tuscaloosa.html">Tuscaloosa</a></li>
+      </ul>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Alabama Business Directory &copy; 2026. All dummy data shown is for demonstration purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterCategory() {
+      var category = document.getElementById('category-filter').value;
+      var cards = document.querySelectorAll('.business-card');
+      var noResults = document.getElementById('no-results');
+
+      var visibleCount = 0;
+      cards.forEach(function(card) {
+        var match = (category === 'all' || card.getAttribute('data-category') === category);
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? '' : 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>

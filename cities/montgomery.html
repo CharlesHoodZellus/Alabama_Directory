@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montgomery Business Directory - Alabama Business Directory</title>
+  <meta name="description" content="Browse trusted businesses in Montgomery, Alabama. Find legal, medical, home services, accounting, engineering, and food &amp; entertainment businesses.">
+  <link rel="canonical" href="montgomery.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Montgomery Business Directory</h1>
+      <p class="tagline">Trusted businesses in Alabama's Capital City</p>
+    </div>
+  </header>
+
+  <nav class="filter-bar">
+    <div class="container">
+      <div class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">All Cities</a> <span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span> <span class="breadcrumb-current">Montgomery</span>
+      </div>
+      <div class="filter-group">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter" onchange="filterCategory()">
+          <option value="all">All Categories</option>
+          <option value="legal">Legal</option>
+          <option value="medical">Medical</option>
+          <option value="home-services">Home Services</option>
+          <option value="accounting">Accounting</option>
+          <option value="engineering">Engineering</option>
+          <option value="food-entertainment">Food &amp; Entertainment</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container directory">
+
+    <section class="city-section" data-city="montgomery">
+      <h2 class="city-heading">All Montgomery Businesses</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Capital City Attorneys at Law</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 445 Dexter Ave, Suite 200, Montgomery, AL 36104</p>
+            <p><strong>Phone:</strong> (334) 555-0101</p>
+            <p><strong>Email:</strong> info@capitalcitylaw.example.com</p>
+            <p><strong>Website:</strong> www.capitalcitylaw.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Charles Whitfield</span> &mdash; Founding Partner<br>
+                <span class="contact-detail">charles.whitfield@capitalcitylaw.example.com</span> | <span class="contact-detail">(334) 555-0102</span></li>
+              <li><span class="person-name">Sandra Bell</span> &mdash; Associate Attorney<br>
+                <span class="contact-detail">sandra.bell@capitalcitylaw.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">River Region Pediatrics</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 2815 Zelda Rd, Montgomery, AL 36106</p>
+            <p><strong>Phone:</strong> (334) 555-0201</p>
+            <p><strong>Email:</strong> care@riverregionpeds.example.com</p>
+            <p><strong>Website:</strong> www.riverregionpeds.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Hannah Pierce</span> &mdash; Lead Pediatrician<br>
+                <span class="contact-detail">hannah.pierce@riverregionpeds.example.com</span> | <span class="contact-detail">(334) 555-0202</span></li>
+              <li><span class="person-name">Michael Grant</span> &mdash; Office Administrator<br>
+                <span class="contact-detail">michael.grant@riverregionpeds.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Dixie Roofing &amp; Restoration</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 3700 Eastern Blvd, Montgomery, AL 36116</p>
+            <p><strong>Phone:</strong> (334) 555-0301</p>
+            <p><strong>Email:</strong> estimates@dixieroofing.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Wayne Douglas</span> &mdash; Owner<br>
+                <span class="contact-detail">wayne@dixieroofing.example.com</span> | <span class="contact-detail">(334) 555-0302</span></li>
+              <li><span class="person-name">Lisa Crawford</span> &mdash; Office Manager<br>
+                <span class="contact-detail">lisa@dixieroofing.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Montgomery Tax &amp; Advisory</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 100 Commerce St, Suite 510, Montgomery, AL 36104</p>
+            <p><strong>Phone:</strong> (334) 555-0401</p>
+            <p><strong>Email:</strong> consult@mgmtax.example.com</p>
+            <p><strong>Website:</strong> www.mgmtax.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Diane Foster, CPA</span> &mdash; Principal<br>
+                <span class="contact-detail">diane.foster@mgmtax.example.com</span> | <span class="contact-detail">(334) 555-0402</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Capitol Engineering Group</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 200 Tallapoosa St, Montgomery, AL 36104</p>
+            <p><strong>Phone:</strong> (334) 555-0501</p>
+            <p><strong>Email:</strong> info@capitoleng.example.com</p>
+            <p><strong>Website:</strong> www.capitoleng.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Harold Pham, PE</span> &mdash; President<br>
+                <span class="contact-detail">harold.pham@capitoleng.example.com</span> | <span class="contact-detail">(334) 555-0502</span></li>
+              <li><span class="person-name">Rachel Goodwin</span> &mdash; Civil Engineer<br>
+                <span class="contact-detail">rachel.goodwin@capitoleng.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">The Alley Bar &amp; Grill</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 105 Montgomery St, Montgomery, AL 36104</p>
+            <p><strong>Phone:</strong> (334) 555-0601</p>
+            <p><strong>Email:</strong> events@thealleymgm.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Troy Henderson</span> &mdash; Owner<br>
+                <span class="contact-detail">troy@thealleymgm.example.com</span> | <span class="contact-detail">(334) 555-0602</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <nav class="city-nav" aria-label="Other cities">
+      <h3 class="city-nav-heading">Browse Other Cities</h3>
+      <ul class="city-nav-list">
+        <li><a href="huntsville.html">Huntsville</a></li>
+        <li><a href="birmingham.html">Birmingham</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="tuscaloosa.html">Tuscaloosa</a></li>
+      </ul>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Alabama Business Directory &copy; 2026. All dummy data shown is for demonstration purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterCategory() {
+      var category = document.getElementById('category-filter').value;
+      var cards = document.querySelectorAll('.business-card');
+      var noResults = document.getElementById('no-results');
+
+      var visibleCount = 0;
+      cards.forEach(function(card) {
+        var match = (category === 'all' || card.getAttribute('data-category') === category);
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? '' : 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>

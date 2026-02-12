@@ -237,6 +237,130 @@ a:hover {
   font-size: 0.88rem;
 }
 
+/* ---------- Breadcrumb ---------- */
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.92rem;
+}
+
+.breadcrumb a {
+  color: #9e1b32;
+  font-weight: 600;
+}
+
+.breadcrumb-sep {
+  color: #999;
+  font-size: 1.1rem;
+}
+
+.breadcrumb-current {
+  color: #555;
+  font-weight: 600;
+}
+
+/* ---------- City Links Bar (Home Page) ---------- */
+.city-links-bar {
+  background: #fafafa;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 14px 0;
+}
+
+.city-links-bar .container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.city-links-label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #555;
+  white-space: nowrap;
+}
+
+.city-links-list {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.city-links-list li a {
+  display: inline-block;
+  padding: 6px 16px;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 20px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #9e1b32;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.city-links-list li a:hover {
+  background-color: #9e1b32;
+  color: #fff;
+  border-color: #9e1b32;
+  text-decoration: none;
+}
+
+/* ---------- City Nav (City Pages) ---------- */
+.city-nav {
+  margin-top: 40px;
+  padding-top: 28px;
+  border-top: 2px solid #e0e0e0;
+}
+
+.city-nav-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 14px;
+}
+
+.city-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.city-nav-list li a {
+  display: inline-block;
+  padding: 8px 20px;
+  background: #fff;
+  border: 1px solid #d0d0d0;
+  border-radius: 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #9e1b32;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.city-nav-list li a:hover {
+  background-color: #9e1b32;
+  color: #fff;
+  border-color: #9e1b32;
+  text-decoration: none;
+}
+
+/* ---------- City Heading Links ---------- */
+.city-heading a {
+  color: #9e1b32;
+  text-decoration: none;
+}
+
+.city-heading a:hover {
+  text-decoration: underline;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: #2c2c2c;
