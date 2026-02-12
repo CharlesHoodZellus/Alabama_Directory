@@ -1,0 +1,289 @@
+/* ================================================
+   Alabama Business Directory – Stylesheet
+   ================================================ */
+
+/* ---------- Reset & Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #1e1e1e;
+  background-color: #f4f5f7;
+}
+
+a {
+  color: #9e1b32;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: linear-gradient(135deg, #9e1b32 0%, #6b1222 100%);
+  color: #fff;
+  padding: 40px 0 36px;
+  text-align: center;
+}
+
+.site-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.site-header .tagline {
+  margin-top: 8px;
+  font-size: 1.05rem;
+  opacity: 0.88;
+}
+
+/* ---------- Filter Bar ---------- */
+.filter-bar {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+}
+
+.filter-bar .container {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.filter-group select {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  background-color: #fafafa;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border-color: #9e1b32;
+  box-shadow: 0 0 0 2px rgba(158, 27, 50, 0.15);
+}
+
+/* ---------- Directory Layout ---------- */
+.directory {
+  padding: 30px 20px 60px;
+}
+
+/* ---------- City Sections ---------- */
+.city-section {
+  margin-bottom: 48px;
+}
+
+.city-heading {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: #9e1b32;
+  border-bottom: 3px solid #9e1b32;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* ---------- Business Cards ---------- */
+.business-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.business-card:hover {
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.09);
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 22px;
+  background: #fafafa;
+  border-bottom: 1px solid #eee;
+}
+
+.business-name {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* ---------- Category Badges ---------- */
+.category-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  white-space: nowrap;
+}
+
+.category-badge.legal {
+  background-color: #eae0f5;
+  color: #5b2d8e;
+}
+
+.category-badge.medical {
+  background-color: #dff0e4;
+  color: #1e6f3e;
+}
+
+.category-badge.home-services {
+  background-color: #fde8d0;
+  color: #a3541f;
+}
+
+.category-badge.accounting {
+  background-color: #d6eaf8;
+  color: #1a5276;
+}
+
+.category-badge.engineering {
+  background-color: #d5e8d4;
+  color: #2e6930;
+}
+
+.category-badge.food-entertainment {
+  background-color: #fce4ec;
+  color: #b71c4a;
+}
+
+/* ---------- Card Body ---------- */
+.card-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  padding: 20px 22px;
+}
+
+.card-body h4 {
+  font-size: 0.88rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.company-info p {
+  margin-bottom: 4px;
+  font-size: 0.93rem;
+}
+
+.company-info p strong {
+  color: #555;
+}
+
+/* ---------- Personnel List ---------- */
+.personnel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.personnel li {
+  margin-bottom: 12px;
+  font-size: 0.93rem;
+  line-height: 1.5;
+}
+
+.person-name {
+  font-weight: 600;
+  color: #333;
+}
+
+.contact-detail {
+  color: #666;
+  font-size: 0.88rem;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: #2c2c2c;
+  color: #bbb;
+  text-align: center;
+  padding: 22px 0;
+  font-size: 0.88rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  .site-header h1 {
+    font-size: 1.6rem;
+  }
+
+  .filter-bar .container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .card-body {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header {
+    padding: 28px 0 24px;
+  }
+
+  .site-header h1 {
+    font-size: 1.35rem;
+  }
+
+  .directory {
+    padding: 20px 10px 40px;
+  }
+
+  .business-card {
+    border-radius: 8px;
+  }
+}
