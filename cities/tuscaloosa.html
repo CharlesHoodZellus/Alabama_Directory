@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tuscaloosa Business Directory - Alabama Business Directory</title>
+  <meta name="description" content="Browse trusted businesses in Tuscaloosa, Alabama. Find legal, medical, home services, accounting, engineering, and food &amp; entertainment businesses.">
+  <link rel="canonical" href="tuscaloosa.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Tuscaloosa Business Directory</h1>
+      <p class="tagline">Trusted businesses in the Druid City</p>
+    </div>
+  </header>
+
+  <nav class="filter-bar">
+    <div class="container">
+      <div class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">All Cities</a> <span class="breadcrumb-sep" aria-hidden="true">&rsaquo;</span> <span class="breadcrumb-current">Tuscaloosa</span>
+      </div>
+      <div class="filter-group">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter" onchange="filterCategory()">
+          <option value="all">All Categories</option>
+          <option value="legal">Legal</option>
+          <option value="medical">Medical</option>
+          <option value="home-services">Home Services</option>
+          <option value="accounting">Accounting</option>
+          <option value="engineering">Engineering</option>
+          <option value="food-entertainment">Food &amp; Entertainment</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container directory">
+
+    <section class="city-section" data-city="tuscaloosa">
+      <h2 class="city-heading">All Tuscaloosa Businesses</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Crimson Tide Law Firm</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 2300 University Blvd, Suite 100, Tuscaloosa, AL 35401</p>
+            <p><strong>Phone:</strong> (205) 555-1101</p>
+            <p><strong>Email:</strong> info@crimsontidelaw.example.com</p>
+            <p><strong>Website:</strong> www.crimsontidelaw.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Thomas Bryant</span> &mdash; Senior Partner<br>
+                <span class="contact-detail">thomas.bryant@crimsontidelaw.example.com</span> | <span class="contact-detail">(205) 555-1102</span></li>
+              <li><span class="person-name">Kendra Moore</span> &mdash; Family Law Attorney<br>
+                <span class="contact-detail">kendra.moore@crimsontidelaw.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Druid City Family Health</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 725 Jack Warner Pkwy, Tuscaloosa, AL 35401</p>
+            <p><strong>Phone:</strong> (205) 555-1201</p>
+            <p><strong>Email:</strong> appointments@druidcityhealth.example.com</p>
+            <p><strong>Website:</strong> www.druidcityhealth.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Priya Kapoor</span> &mdash; Family Physician<br>
+                <span class="contact-detail">priya.kapoor@druidcityhealth.example.com</span> | <span class="contact-detail">(205) 555-1202</span></li>
+              <li><span class="person-name">Danielle Webb</span> &mdash; Nurse Practitioner<br>
+                <span class="contact-detail">danielle.webb@druidcityhealth.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">West Alabama Landscaping</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1801 McFarland Blvd E, Tuscaloosa, AL 35404</p>
+            <p><strong>Phone:</strong> (205) 555-1301</p>
+            <p><strong>Email:</strong> quotes@westalabamalandscaping.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Russell Ingram</span> &mdash; Owner<br>
+                <span class="contact-detail">russell@westalabamalandscaping.example.com</span> | <span class="contact-detail">(205) 555-1302</span></li>
+              <li><span class="person-name">Cody Sparks</span> &mdash; Crew Foreman<br>
+                <span class="contact-detail">cody@westalabamalandscaping.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">T-Town Accounting Services</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 500 Greensboro Ave, Suite 204, Tuscaloosa, AL 35401</p>
+            <p><strong>Phone:</strong> (205) 555-1401</p>
+            <p><strong>Email:</strong> info@ttownaccounting.example.com</p>
+            <p><strong>Website:</strong> www.ttownaccounting.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Barbara Jenkins, CPA</span> &mdash; Owner<br>
+                <span class="contact-detail">barbara@ttownaccounting.example.com</span> | <span class="contact-detail">(205) 555-1402</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Black Warrior Engineering</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1900 Rice Mine Rd NE, Tuscaloosa, AL 35406</p>
+            <p><strong>Phone:</strong> (205) 555-1501</p>
+            <p><strong>Email:</strong> info@blackwarrioreng.example.com</p>
+            <p><strong>Website:</strong> www.blackwarrioreng.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Martin Yates, PE</span> &mdash; Founding Engineer<br>
+                <span class="contact-detail">martin.yates@blackwarrioreng.example.com</span> | <span class="contact-detail">(205) 555-1502</span></li>
+              <li><span class="person-name">Sara Hutchinson</span> &mdash; Project Coordinator<br>
+                <span class="contact-detail">sara.hutchinson@blackwarrioreng.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">The Strip Smokehouse</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1212 University Blvd, Tuscaloosa, AL 35401</p>
+            <p><strong>Phone:</strong> (205) 555-1601</p>
+            <p><strong>Email:</strong> eat@stripsmokehouse.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jake Patterson</span> &mdash; Owner / Pitmaster<br>
+                <span class="contact-detail">jake@stripsmokehouse.example.com</span> | <span class="contact-detail">(205) 555-1602</span></li>
+              <li><span class="person-name">Amber Collins</span> &mdash; Front of House Manager<br>
+                <span class="contact-detail">amber@stripsmokehouse.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <nav class="city-nav" aria-label="Other cities">
+      <h3 class="city-nav-heading">Browse Other Cities</h3>
+      <ul class="city-nav-list">
+        <li><a href="huntsville.html">Huntsville</a></li>
+        <li><a href="birmingham.html">Birmingham</a></li>
+        <li><a href="montgomery.html">Montgomery</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+      </ul>
+    </nav>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Alabama Business Directory &copy; 2026. All dummy data shown is for demonstration purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterCategory() {
+      var category = document.getElementById('category-filter').value;
+      var cards = document.querySelectorAll('.business-card');
+      var noResults = document.getElementById('no-results');
+
+      var visibleCount = 0;
+      cards.forEach(function(card) {
+        var match = (category === 'all' || card.getAttribute('data-category') === category);
+        card.style.display = match ? '' : 'none';
+        if (match) visibleCount++;
+      });
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? '' : 'none';
+      }
+    }
+  </script>
+
+</body>
+</html>
