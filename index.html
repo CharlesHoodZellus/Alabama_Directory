@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alabama Business Directory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <h1>Alabama Business Directory</h1>
+      <p class="tagline">Connecting you with trusted businesses across the Heart of Dixie</p>
+    </div>
+  </header>
+
+  <nav class="filter-bar">
+    <div class="container">
+      <div class="filter-group">
+        <label for="city-filter">Filter by City:</label>
+        <select id="city-filter" onchange="filterDirectory()">
+          <option value="all">All Cities</option>
+          <option value="huntsville">Huntsville</option>
+          <option value="birmingham">Birmingham</option>
+          <option value="montgomery">Montgomery</option>
+          <option value="mobile">Mobile</option>
+          <option value="tuscaloosa">Tuscaloosa</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="category-filter">Filter by Category:</label>
+        <select id="category-filter" onchange="filterDirectory()">
+          <option value="all">All Categories</option>
+          <option value="legal">Legal</option>
+          <option value="medical">Medical</option>
+          <option value="home-services">Home Services</option>
+          <option value="accounting">Accounting</option>
+          <option value="engineering">Engineering</option>
+          <option value="food-entertainment">Food &amp; Entertainment</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container directory">
+
+    <!-- ============================================================ -->
+    <!-- HUNTSVILLE                                                    -->
+    <!-- ============================================================ -->
+    <section class="city-section" data-city="huntsville">
+      <h2 class="city-heading">Huntsville</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-city="huntsville" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Rocket City Law Group</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 200 Jefferson St N, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0101</p>
+            <p><strong>Email:</strong> info@rocketcitylaw.example.com</p>
+            <p><strong>Website:</strong> www.rocketcitylaw.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Margaret Sullivan</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">margaret.sullivan@rocketcitylaw.example.com</span> | <span class="contact-detail">(256) 555-0102</span></li>
+              <li><span class="person-name">David Chen</span> &mdash; Senior Associate<br>
+                <span class="contact-detail">david.chen@rocketcitylaw.example.com</span> | <span class="contact-detail">(256) 555-0103</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-city="huntsville" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">North Alabama Family Medicine</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 808 Turner Ave SW, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0201</p>
+            <p><strong>Email:</strong> appointments@nafm.example.com</p>
+            <p><strong>Website:</strong> www.nafm.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Angela Reeves</span> &mdash; Chief Physician<br>
+                <span class="contact-detail">angela.reeves@nafm.example.com</span> | <span class="contact-detail">(256) 555-0202</span></li>
+              <li><span class="person-name">James Holbrook</span> &mdash; Office Manager<br>
+                <span class="contact-detail">james.holbrook@nafm.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-city="huntsville" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Tennessee Valley Home Repair</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1425 Meridian St N, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0301</p>
+            <p><strong>Email:</strong> service@tvhomerepair.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Bobby Caldwell</span> &mdash; Owner / General Contractor<br>
+                <span class="contact-detail">bobby@tvhomerepair.example.com</span> | <span class="contact-detail">(256) 555-0302</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-city="huntsville" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Cummings & Associates CPAs</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 600 Boulevard South SW, Huntsville, AL 35802</p>
+            <p><strong>Phone:</strong> (256) 555-0401</p>
+            <p><strong>Email:</strong> office@cummingscpa.example.com</p>
+            <p><strong>Website:</strong> www.cummingscpa.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Patricia Cummings</span> &mdash; Managing CPA<br>
+                <span class="contact-detail">patricia@cummingscpa.example.com</span> | <span class="contact-detail">(256) 555-0402</span></li>
+              <li><span class="person-name">Steven Nguyen</span> &mdash; Tax Specialist<br>
+                <span class="contact-detail">steven@cummingscpa.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-city="huntsville" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Redstone Engineering Solutions</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 3322 Memorial Pkwy SW, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0501</p>
+            <p><strong>Email:</strong> contact@redstoneeng.example.com</p>
+            <p><strong>Website:</strong> www.redstoneeng.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">William Park</span> &mdash; Principal Engineer<br>
+                <span class="contact-detail">william.park@redstoneeng.example.com</span> | <span class="contact-detail">(256) 555-0502</span></li>
+              <li><span class="person-name">Laura Kim</span> &mdash; Project Manager<br>
+                <span class="contact-detail">laura.kim@redstoneeng.example.com</span> | <span class="contact-detail">(256) 555-0503</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-city="huntsville" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Cotton Row Kitchen &amp; Bar</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 100 Southside Square, Huntsville, AL 35801</p>
+            <p><strong>Phone:</strong> (256) 555-0601</p>
+            <p><strong>Email:</strong> reservations@cottonrowkb.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Chef Marcus Tate</span> &mdash; Owner / Executive Chef<br>
+                <span class="contact-detail">marcus@cottonrowkb.example.com</span> | <span class="contact-detail">(256) 555-0602</span></li>
+              <li><span class="person-name">Danielle Odom</span> &mdash; Events Coordinator<br>
+                <span class="contact-detail">danielle@cottonrowkb.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- BIRMINGHAM                                                    -->
+    <!-- ============================================================ -->
+    <section class="city-section" data-city="birmingham">
+      <h2 class="city-heading">Birmingham</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-city="birmingham" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Iron City Legal Partners</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1901 6th Ave N, Suite 400, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 555-0101</p>
+            <p><strong>Email:</strong> info@ironcitylegal.example.com</p>
+            <p><strong>Website:</strong> www.ironcitylegal.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Robert Franklin</span> &mdash; Senior Partner<br>
+                <span class="contact-detail">robert.franklin@ironcitylegal.example.com</span> | <span class="contact-detail">(205) 555-0102</span></li>
+              <li><span class="person-name">Aisha Williams</span> &mdash; Associate Attorney<br>
+                <span class="contact-detail">aisha.williams@ironcitylegal.example.com</span> | <span class="contact-detail">(205) 555-0103</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-city="birmingham" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Southside Medical Associates</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 710 20th St S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 555-0201</p>
+            <p><strong>Email:</strong> info@southsidemed.example.com</p>
+            <p><strong>Website:</strong> www.southsidemed.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Terrence Mitchell</span> &mdash; Medical Director<br>
+                <span class="contact-detail">terrence.mitchell@southsidemed.example.com</span> | <span class="contact-detail">(205) 555-0202</span></li>
+              <li><span class="person-name">Karen Russo</span> &mdash; Practice Administrator<br>
+                <span class="contact-detail">karen.russo@southsidemed.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-city="birmingham" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Magic City Plumbing &amp; Electric</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 4500 5th Ave S, Birmingham, AL 35222</p>
+            <p><strong>Phone:</strong> (205) 555-0301</p>
+            <p><strong>Email:</strong> dispatch@magiccityplumbing.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Derek Simmons</span> &mdash; Owner<br>
+                <span class="contact-detail">derek@magiccityplumbing.example.com</span> | <span class="contact-detail">(205) 555-0302</span></li>
+              <li><span class="person-name">Tameka Johnson</span> &mdash; Scheduling Manager<br>
+                <span class="contact-detail">tameka@magiccityplumbing.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-city="birmingham" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Vulcan Financial Group</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 2100 Riverchase Center, Birmingham, AL 35244</p>
+            <p><strong>Phone:</strong> (205) 555-0401</p>
+            <p><strong>Email:</strong> info@vulcanfinancial.example.com</p>
+            <p><strong>Website:</strong> www.vulcanfinancial.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Gregory Harper</span> &mdash; Managing Director<br>
+                <span class="contact-detail">gregory.harper@vulcanfinancial.example.com</span> | <span class="contact-detail">(205) 555-0402</span></li>
+              <li><span class="person-name">Michelle Torres</span> &mdash; Senior Accountant<br>
+                <span class="contact-detail">michelle.torres@vulcanfinancial.example.com</span> | <span class="contact-detail">(205) 555-0403</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-city="birmingham" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Birmingham Structural Engineers</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 300 Richard Arrington Jr Blvd N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 555-0501</p>
+            <p><strong>Email:</strong> projects@bhamengineer.example.com</p>
+            <p><strong>Website:</strong> www.bhamengineer.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Nicole Adams, PE</span> &mdash; Principal Engineer<br>
+                <span class="contact-detail">nicole.adams@bhamengineer.example.com</span> | <span class="contact-detail">(205) 555-0502</span></li>
+              <li><span class="person-name">Carlos Rivera</span> &mdash; Design Lead<br>
+                <span class="contact-detail">carlos.rivera@bhamengineer.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-city="birmingham" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Five Points Grill &amp; Taproom</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1035 20th St S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 555-0601</p>
+            <p><strong>Email:</strong> hello@fivepointsgrill.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Anthony Bridges</span> &mdash; Owner / General Manager<br>
+                <span class="contact-detail">anthony@fivepointsgrill.example.com</span> | <span class="contact-detail">(205) 555-0602</span></li>
+              <li><span class="person-name">Jasmine Carter</span> &mdash; Events &amp; Catering<br>
+                <span class="contact-detail">jasmine@fivepointsgrill.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- MONTGOMERY                                                    -->
+    <!-- ============================================================ -->
+    <section class="city-section" data-city="montgomery">
+      <h2 class="city-heading">Montgomery</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-city="montgomery" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Capital City Attorneys at Law</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 445 Dexter Ave, Suite 200, Montgomery, AL 36104</p>
+            <p><strong>Phone:</strong> (334) 555-0101</p>
+            <p><strong>Email:</strong> info@capitalcitylaw.example.com</p>
+            <p><strong>Website:</strong> www.capitalcitylaw.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Charles Whitfield</span> &mdash; Founding Partner<br>
+                <span class="contact-detail">charles.whitfield@capitalcitylaw.example.com</span> | <span class="contact-detail">(334) 555-0102</span></li>
+              <li><span class="person-name">Sandra Bell</span> &mdash; Associate Attorney<br>
+                <span class="contact-detail">sandra.bell@capitalcitylaw.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-city="montgomery" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">River Region Pediatrics</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 2815 Zelda Rd, Montgomery, AL 36106</p>
+            <p><strong>Phone:</strong> (334) 555-0201</p>
+            <p><strong>Email:</strong> care@riverregionpeds.example.com</p>
+            <p><strong>Website:</strong> www.riverregionpeds.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Hannah Pierce</span> &mdash; Lead Pediatrician<br>
+                <span class="contact-detail">hannah.pierce@riverregionpeds.example.com</span> | <span class="contact-detail">(334) 555-0202</span></li>
+              <li><span class="person-name">Michael Grant</span> &mdash; Office Administrator<br>
+                <span class="contact-detail">michael.grant@riverregionpeds.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-city="montgomery" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Dixie Roofing &amp; Restoration</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 3700 Eastern Blvd, Montgomery, AL 36116</p>
+            <p><strong>Phone:</strong> (334) 555-0301</p>
+            <p><strong>Email:</strong> estimates@dixieroofing.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Wayne Douglas</span> &mdash; Owner<br>
+                <span class="contact-detail">wayne@dixieroofing.example.com</span> | <span class="contact-detail">(334) 555-0302</span></li>
+              <li><span class="person-name">Lisa Crawford</span> &mdash; Office Manager<br>
+                <span class="contact-detail">lisa@dixieroofing.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-city="montgomery" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Montgomery Tax &amp; Advisory</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 100 Commerce St, Suite 510, Montgomery, AL 36104</p>
+            <p><strong>Phone:</strong> (334) 555-0401</p>
+            <p><strong>Email:</strong> consult@mgmtax.example.com</p>
+            <p><strong>Website:</strong> www.mgmtax.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Diane Foster, CPA</span> &mdash; Principal<br>
+                <span class="contact-detail">diane.foster@mgmtax.example.com</span> | <span class="contact-detail">(334) 555-0402</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-city="montgomery" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Capitol Engineering Group</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 200 Tallapoosa St, Montgomery, AL 36104</p>
+            <p><strong>Phone:</strong> (334) 555-0501</p>
+            <p><strong>Email:</strong> info@capitoleng.example.com</p>
+            <p><strong>Website:</strong> www.capitoleng.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Harold Pham, PE</span> &mdash; President<br>
+                <span class="contact-detail">harold.pham@capitoleng.example.com</span> | <span class="contact-detail">(334) 555-0502</span></li>
+              <li><span class="person-name">Rachel Goodwin</span> &mdash; Civil Engineer<br>
+                <span class="contact-detail">rachel.goodwin@capitoleng.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-city="montgomery" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">The Alley Bar &amp; Grill</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 105 Montgomery St, Montgomery, AL 36104</p>
+            <p><strong>Phone:</strong> (334) 555-0601</p>
+            <p><strong>Email:</strong> events@thealleymgm.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Troy Henderson</span> &mdash; Owner<br>
+                <span class="contact-detail">troy@thealleymgm.example.com</span> | <span class="contact-detail">(334) 555-0602</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- MOBILE                                                        -->
+    <!-- ============================================================ -->
+    <section class="city-section" data-city="mobile">
+      <h2 class="city-heading">Mobile</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-city="mobile" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Gulf Coast Legal Services</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 205 Government St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 555-0101</p>
+            <p><strong>Email:</strong> info@gulfcoastlegal.example.com</p>
+            <p><strong>Website:</strong> www.gulfcoastlegal.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Evelyn Marsh</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">evelyn.marsh@gulfcoastlegal.example.com</span> | <span class="contact-detail">(251) 555-0102</span></li>
+              <li><span class="person-name">Richard Coleman</span> &mdash; Litigation Attorney<br>
+                <span class="contact-detail">richard.coleman@gulfcoastlegal.example.com</span> | <span class="contact-detail">(251) 555-0103</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-city="mobile" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Azalea City Urgent Care</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 3100 Dauphin St, Mobile, AL 36606</p>
+            <p><strong>Phone:</strong> (251) 555-0201</p>
+            <p><strong>Email:</strong> care@azaleaurgent.example.com</p>
+            <p><strong>Website:</strong> www.azaleaurgent.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Samuel Ortega</span> &mdash; Medical Director<br>
+                <span class="contact-detail">samuel.ortega@azaleaurgent.example.com</span> | <span class="contact-detail">(251) 555-0202</span></li>
+              <li><span class="person-name">Brenda Lewis</span> &mdash; Head Nurse<br>
+                <span class="contact-detail">brenda.lewis@azaleaurgent.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-city="mobile" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Port City HVAC &amp; Electrical</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 950 Schillinger Rd S, Mobile, AL 36695</p>
+            <p><strong>Phone:</strong> (251) 555-0301</p>
+            <p><strong>Email:</strong> service@portcityhvac.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Frank Delacroix</span> &mdash; Owner / Master Electrician<br>
+                <span class="contact-detail">frank@portcityhvac.example.com</span> | <span class="contact-detail">(251) 555-0302</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-city="mobile" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Bayou Bookkeeping &amp; Tax</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 61 St. Joseph St, Suite 300, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 555-0401</p>
+            <p><strong>Email:</strong> info@bayoubookkeeping.example.com</p>
+            <p><strong>Website:</strong> www.bayoubookkeeping.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Catherine Thibodaux</span> &mdash; Owner / CPA<br>
+                <span class="contact-detail">catherine@bayoubookkeeping.example.com</span> | <span class="contact-detail">(251) 555-0402</span></li>
+              <li><span class="person-name">Jerome Harris</span> &mdash; Staff Accountant<br>
+                <span class="contact-detail">jerome@bayoubookkeeping.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-city="mobile" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Mobile Bay Civil Engineers</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1204 Beltline Hwy, Mobile, AL 36609</p>
+            <p><strong>Phone:</strong> (251) 555-0501</p>
+            <p><strong>Email:</strong> projects@mobilebayeng.example.com</p>
+            <p><strong>Website:</strong> www.mobilebayeng.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">George Patterson, PE</span> &mdash; Senior Engineer<br>
+                <span class="contact-detail">george.patterson@mobilebayeng.example.com</span> | <span class="contact-detail">(251) 555-0502</span></li>
+              <li><span class="person-name">Amy Tran</span> &mdash; Environmental Specialist<br>
+                <span class="contact-detail">amy.tran@mobilebayeng.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-city="mobile" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Mardi Gras Eats &amp; Beats</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 309 Dauphin St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 555-0601</p>
+            <p><strong>Email:</strong> bookings@mardigraseats.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Monique Boudreaux</span> &mdash; Owner / General Manager<br>
+                <span class="contact-detail">monique@mardigraseats.example.com</span> | <span class="contact-detail">(251) 555-0602</span></li>
+              <li><span class="person-name">Keith Washington</span> &mdash; Entertainment Booker<br>
+                <span class="contact-detail">keith@mardigraseats.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TUSCALOOSA                                                    -->
+    <!-- ============================================================ -->
+    <section class="city-section" data-city="tuscaloosa">
+      <h2 class="city-heading">Tuscaloosa</h2>
+
+      <!-- Legal -->
+      <div class="business-card" data-city="tuscaloosa" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Crimson Tide Law Firm</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 2300 University Blvd, Suite 100, Tuscaloosa, AL 35401</p>
+            <p><strong>Phone:</strong> (205) 555-1101</p>
+            <p><strong>Email:</strong> info@crimsontidelaw.example.com</p>
+            <p><strong>Website:</strong> www.crimsontidelaw.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Thomas Bryant</span> &mdash; Senior Partner<br>
+                <span class="contact-detail">thomas.bryant@crimsontidelaw.example.com</span> | <span class="contact-detail">(205) 555-1102</span></li>
+              <li><span class="person-name">Kendra Moore</span> &mdash; Family Law Attorney<br>
+                <span class="contact-detail">kendra.moore@crimsontidelaw.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-city="tuscaloosa" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Druid City Family Health</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 725 Jack Warner Pkwy, Tuscaloosa, AL 35401</p>
+            <p><strong>Phone:</strong> (205) 555-1201</p>
+            <p><strong>Email:</strong> appointments@druidcityhealth.example.com</p>
+            <p><strong>Website:</strong> www.druidcityhealth.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Priya Kapoor</span> &mdash; Family Physician<br>
+                <span class="contact-detail">priya.kapoor@druidcityhealth.example.com</span> | <span class="contact-detail">(205) 555-1202</span></li>
+              <li><span class="person-name">Danielle Webb</span> &mdash; Nurse Practitioner<br>
+                <span class="contact-detail">danielle.webb@druidcityhealth.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-city="tuscaloosa" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">West Alabama Landscaping</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1801 McFarland Blvd E, Tuscaloosa, AL 35404</p>
+            <p><strong>Phone:</strong> (205) 555-1301</p>
+            <p><strong>Email:</strong> quotes@westalabamalandscaping.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Russell Ingram</span> &mdash; Owner<br>
+                <span class="contact-detail">russell@westalabamalandscaping.example.com</span> | <span class="contact-detail">(205) 555-1302</span></li>
+              <li><span class="person-name">Cody Sparks</span> &mdash; Crew Foreman<br>
+                <span class="contact-detail">cody@westalabamalandscaping.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accounting -->
+      <div class="business-card" data-city="tuscaloosa" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">T-Town Accounting Services</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 500 Greensboro Ave, Suite 204, Tuscaloosa, AL 35401</p>
+            <p><strong>Phone:</strong> (205) 555-1401</p>
+            <p><strong>Email:</strong> info@ttownaccounting.example.com</p>
+            <p><strong>Website:</strong> www.ttownaccounting.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Barbara Jenkins, CPA</span> &mdash; Owner<br>
+                <span class="contact-detail">barbara@ttownaccounting.example.com</span> | <span class="contact-detail">(205) 555-1402</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Engineering -->
+      <div class="business-card" data-city="tuscaloosa" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Black Warrior Engineering</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1900 Rice Mine Rd NE, Tuscaloosa, AL 35406</p>
+            <p><strong>Phone:</strong> (205) 555-1501</p>
+            <p><strong>Email:</strong> info@blackwarrioreng.example.com</p>
+            <p><strong>Website:</strong> www.blackwarrioreng.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Martin Yates, PE</span> &mdash; Founding Engineer<br>
+                <span class="contact-detail">martin.yates@blackwarrioreng.example.com</span> | <span class="contact-detail">(205) 555-1502</span></li>
+              <li><span class="person-name">Sara Hutchinson</span> &mdash; Project Coordinator<br>
+                <span class="contact-detail">sara.hutchinson@blackwarrioreng.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Food & Entertainment -->
+      <div class="business-card" data-city="tuscaloosa" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">The Strip Smokehouse</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>Address:</strong> 1212 University Blvd, Tuscaloosa, AL 35401</p>
+            <p><strong>Phone:</strong> (205) 555-1601</p>
+            <p><strong>Email:</strong> eat@stripsmokehouse.example.com</p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jake Patterson</span> &mdash; Owner / Pitmaster<br>
+                <span class="contact-detail">jake@stripsmokehouse.example.com</span> | <span class="contact-detail">(205) 555-1602</span></li>
+              <li><span class="person-name">Amber Collins</span> &mdash; Front of House Manager<br>
+                <span class="contact-detail">amber@stripsmokehouse.example.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Alabama Business Directory &copy; 2026. All dummy data shown is for demonstration purposes only.</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterDirectory() {
+      var city = document.getElementById('city-filter').value;
+      var category = document.getElementById('category-filter').value;
+
+      var sections = document.querySelectorAll('.city-section');
+      var cards = document.querySelectorAll('.business-card');
+
+      // Show all sections first, then hide as needed
+      sections.forEach(function(section) {
+        section.style.display = '';
+      });
+
+      cards.forEach(function(card) {
+        var matchCity = (city === 'all' || card.getAttribute('data-city') === city);
+        var matchCat = (category === 'all' || card.getAttribute('data-category') === category);
+        card.style.display = (matchCity && matchCat) ? '' : 'none';
+      });
+
+      // Hide city sections that have zero visible cards
+      sections.forEach(function(section) {
+        var visibleCards = section.querySelectorAll('.business-card:not([style*="display: none"])');
+        section.style.display = visibleCards.length > 0 ? '' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
