@@ -41,6 +41,10 @@
           <option value="food-entertainment">Food &amp; Entertainment</option>
         </select>
       </div>
+      <div class="search-group">
+        <label for="search-input">Search:</label>
+        <input type="text" id="search-input" placeholder="Business name, person, address&hellip;" oninput="filterDirectory()">
+      </div>
     </div>
   </nav>
 
@@ -1037,6 +1041,11 @@
       </div>
     </section>
 
+    <div id="no-results" class="no-results">
+      <p><strong>No businesses found.</strong></p>
+      <p>Try a different search term or adjust your filters.</p>
+    </div>
+
   </main>
 
   <footer class="site-footer">
@@ -1049,19 +1058,36 @@
     function filterDirectory() {
       var city = document.getElementById('city-filter').value;
       var category = document.getElementById('category-filter').value;
+      var searchTerm = document.getElementById('search-input').value.trim().toLowerCase();
 
       var sections = document.querySelectorAll('.city-section');
       var cards = document.querySelectorAll('.business-card');
+      var noResults = document.getElementById('no-results');
 
       // Show all sections first, then hide as needed
       sections.forEach(function(section) {
         section.style.display = '';
       });
 
+      var totalVisible = 0;
+
       cards.forEach(function(card) {
-        var matchCity = (city === 'all' || card.getAttribute('data-city') === city);
+        // When a search term is active, show matches from ALL cities
+        var matchCity = searchTerm
+          ? true
+          : (city === 'all' || card.getAttribute('data-city') === city);
         var matchCat = (category === 'all' || card.getAttribute('data-category') === category);
-        card.style.display = (matchCity && matchCat) ? '' : 'none';
+
+        // Text search: match against all visible text in the card
+        var matchSearch = true;
+        if (searchTerm) {
+          var cardText = card.textContent.toLowerCase();
+          matchSearch = cardText.indexOf(searchTerm) !== -1;
+        }
+
+        var visible = matchCity && matchCat && matchSearch;
+        card.style.display = visible ? '' : 'none';
+        if (visible) totalVisible++;
       });
 
       // Hide city sections that have zero visible cards
@@ -1069,6 +1095,11 @@
         var visibleCards = section.querySelectorAll('.business-card:not([style*="display: none"])');
         section.style.display = visibleCards.length > 0 ? '' : 'none';
       });
+
+      // Show or hide "no results" message
+      if (noResults) {
+        noResults.style.display = totalVisible === 0 ? '' : 'none';
+      }
     }
   </script>
 

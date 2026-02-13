@@ -34,6 +34,10 @@
           <option value="food-entertainment">Food &amp; Entertainment</option>
         </select>
       </div>
+      <div class="search-group">
+        <label for="search-input">Search:</label>
+        <input type="text" id="search-input" placeholder="Business name, person, address&hellip;" oninput="filterCategory()">
+      </div>
     </div>
   </nav>
 
@@ -198,6 +202,11 @@
 
     </section>
 
+    <div id="no-results" class="no-results">
+      <p><strong>No businesses found.</strong></p>
+      <p>Try a different search term or adjust your filters.</p>
+    </div>
+
     <nav class="city-nav" aria-label="Other cities">
       <h3 class="city-nav-heading">Browse Other Cities</h3>
       <ul class="city-nav-list">
@@ -219,14 +228,23 @@
   <script>
     function filterCategory() {
       var category = document.getElementById('category-filter').value;
+      var searchTerm = document.getElementById('search-input').value.trim().toLowerCase();
       var cards = document.querySelectorAll('.business-card');
       var noResults = document.getElementById('no-results');
 
       var visibleCount = 0;
       cards.forEach(function(card) {
-        var match = (category === 'all' || card.getAttribute('data-category') === category);
-        card.style.display = match ? '' : 'none';
-        if (match) visibleCount++;
+        var matchCat = (category === 'all' || card.getAttribute('data-category') === category);
+
+        var matchSearch = true;
+        if (searchTerm) {
+          var cardText = card.textContent.toLowerCase();
+          matchSearch = cardText.indexOf(searchTerm) !== -1;
+        }
+
+        var visible = matchCat && matchSearch;
+        card.style.display = visible ? '' : 'none';
+        if (visible) visibleCount++;
       });
 
       if (noResults) {

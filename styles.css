@@ -99,6 +99,55 @@ a:hover {
   box-shadow: 0 0 0 2px rgba(158, 27, 50, 0.15);
 }
 
+/* ---------- Search Input ---------- */
+.search-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-group label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.search-group input[type="text"] {
+  padding: 8px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.92rem;
+  background-color: #fafafa;
+  width: 100%;
+  max-width: 300px;
+  transition: border-color 0.2s;
+}
+
+.search-group input[type="text"]:focus {
+  outline: none;
+  border-color: #9e1b32;
+  box-shadow: 0 0 0 2px rgba(158, 27, 50, 0.15);
+}
+
+.search-group input[type="text"]::placeholder {
+  color: #999;
+}
+
+/* ---------- No Results Message ---------- */
+.no-results {
+  display: none;
+  text-align: center;
+  padding: 48px 20px;
+  color: #777;
+  font-size: 1.1rem;
+}
+
+.no-results strong {
+  color: #555;
+}
+
 /* ---------- Directory Layout ---------- */
 .directory {
   padding: 30px 20px 60px;
