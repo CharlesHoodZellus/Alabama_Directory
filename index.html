@@ -43,7 +43,8 @@
       </div>
       <div class="search-group">
         <label for="search-input">Search:</label>
-        <input type="text" id="search-input" placeholder="Business name, person, address&hellip;" oninput="filterDirectory()">
+        <input type="text" id="search-input" placeholder="Enter Search Term" onkeydown="if(event.key==='Enter')filterDirectory()">
+        <button type="button" class="search-btn" onclick="filterDirectory()">Search</button>
       </div>
     </div>
   </nav>
@@ -78,14 +79,17 @@
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 200 Clinton Ave W, Ste 900, Huntsville, AL 35801</p>
+            <p><strong>About:</strong> National full-service firm focusing on corporate litigation, gov-con, and IP.</p>
             <p><strong>Phone:</strong> (256) 517-5100</p>
+            <p><strong>Email:</strong> info@bradley.com</p>
+            <p><strong>Website:</strong> <a href="https://bradley.com" target="_blank" rel="noopener noreferrer">bradley.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Hall B. Bryant III</span> &mdash; Partner<br>
-                <span class="contact-detail">hbryant@bradley.com</span> | <span class="contact-detail">(256) 517-5187</span></li>
+              <li><span class="person-name">Benjamin W. Hutton</span> &mdash; Office Managing Partner<br>
+                <span class="contact-detail">bhutton@bradley.com</span></li>
+              <li><span class="person-name">Rhonda Bagwell</span> &mdash; Office Administrator</li>
             </ul>
           </div>
         </div>
@@ -93,166 +97,23 @@
 
       <div class="business-card" data-city="huntsville" data-category="legal">
         <div class="card-header">
-          <h3 class="business-name">Maynard Nexsen</h3>
+          <h3 class="business-name">Dentons Sirote PC</h3>
           <span class="category-badge legal">Legal</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 655 Gallatin St SW, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 551-0171</p>
+            <p><strong>About:</strong> Global firm providing tax, real estate, and government contract legal services.</p>
+            <p><strong>Phone:</strong> (256) 536-1711</p>
+            <p><strong>Email:</strong> info@sirote.com</p>
+            <p><strong>Website:</strong> <a href="https://dentons.com" target="_blank" rel="noopener noreferrer">dentons.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Walter Dodgen</span> &mdash; Shareholder<br>
-                <span class="contact-detail">(256) 426-3840</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="business-card" data-city="huntsville" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Lanier Ford Shaver &amp; Payne P.C.</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 2101 West Clinton Ave, Ste 102, Huntsville, AL 35805</p>
-            <p><strong>Phone:</strong> (256) 535-1100</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Daniel F. Beasley</span> &mdash; Attorney<br>
-                <span class="contact-detail">dfb@LanierFord.com</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="business-card" data-city="huntsville" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Wilmer &amp; Lee, P.A.</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 100 Washington St, Ste 200, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 533-0202</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li>Contact firm for specific department leads.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="business-card" data-city="huntsville" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Dentons Sirote</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 200 Clinton Ave W, Ste 1000, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 518-3600</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Michelle Abroms Levin</span> &mdash; Shareholder / Office Manager<br>
-                <span class="contact-detail">(256) 518-3605</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="business-card" data-city="huntsville" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Martinson &amp; Beason, P.C.</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 115 Northside Square, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 533-1667</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">A. Mac Martinson</span> &mdash; Attorney<br>
-                <span class="contact-detail">mac@martinsonandbeason.com</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="business-card" data-city="huntsville" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Timberlake, League &amp; Brooks</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 125 Holmes Ave NW, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 536-0770</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Michael Timberlake</span> &mdash; Attorney<br>
-                <span class="contact-detail">info@law-injury.com</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="business-card" data-city="huntsville" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Morris, King &amp; Hodge, P.C.</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 200 Pratt Ave NE, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 573-4843</p>
-            <p><strong>Website:</strong> mkhlawyers.com</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Harvey B. Morris</span> &mdash; Partner</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="business-card" data-city="huntsville" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Wolfe, Jones, Wolfe, Hancock, Daniel &amp; South</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 905 Bob Wallace Ave SW, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 534-2205</p>
-            <p><strong>Email:</strong> info@wolfejones.com</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li>Inquire via info@wolfejones.com</li>
+              <li><span class="person-name">Michelle Abroms Levin</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">michelle.levin@dentons.com</span></li>
+              <li><span class="person-name">Roderic G. Steakley</span> &mdash; Partner</li>
             </ul>
           </div>
         </div>
@@ -266,13 +127,181 @@
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 1110 Gleneagles Dr SW, Huntsville, AL 35801</p>
+            <p><strong>About:</strong> Plaintiff-focused firm specializing in workers' compensation and injury litigation.</p>
             <p><strong>Phone:</strong> (256) 650-5500</p>
+            <p><strong>Email:</strong> law@hornsbywatson.com</p>
+            <p><strong>Website:</strong> <a href="https://hornsbywatson.com" target="_blank" rel="noopener noreferrer">hornsbywatson.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li>Contact firm for direct partner lines.</li>
+              <li><span class="person-name">Ralph W. Hornsby Sr.</span> &mdash; Partner</li>
+              <li><span class="person-name">S.A. Watson Jr.</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Lanier Ford Shaver &amp; Payne P.C.</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> Professional defense firm for healthcare, municipal law, and business entities.</p>
+            <p><strong>Phone:</strong> (256) 535-1100</p>
+            <p><strong>Email:</strong> info@LanierFord.com</p>
+            <p><strong>Website:</strong> <a href="https://lanierford.com" target="_blank" rel="noopener noreferrer">lanierford.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Daniel F. Beasley</span> &mdash; Shareholder<br>
+                <span class="contact-detail">dfb@LanierFord.com</span></li>
+              <li><span class="person-name">David J. Canupp</span> &mdash; Shareholder</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Martinson &amp; Beason, P.C.</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> Heritage Huntsville firm handling real estate, probate, and injury law since 1937.</p>
+            <p><strong>Phone:</strong> (256) 533-1667</p>
+            <p><strong>Email:</strong> info@martinsonandbeason.com</p>
+            <p><strong>Website:</strong> <a href="https://martinsonandbeason.com" target="_blank" rel="noopener noreferrer">martinsonandbeason.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Douglas C. Martinson II</span> &mdash; Partner<br>
+                <span class="contact-detail">dougii@martinsonandbeason.com</span></li>
+              <li><span class="person-name">A. Mac Martinson</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Maynard Nexsen PC</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> Regional powerhouse specializing in labor, defense industry, and corporate law.</p>
+            <p><strong>Phone:</strong> (256) 551-0171</p>
+            <p><strong>Email:</strong> info@maynardnexsen.com</p>
+            <p><strong>Website:</strong> <a href="https://maynardnexsen.com" target="_blank" rel="noopener noreferrer">maynardnexsen.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Walter Dodgen</span> &mdash; Shareholder</li>
+              <li><span class="person-name">W. Brad English</span> &mdash; Shareholder</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Morris, King &amp; Hodge, P.C.</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> Dedicated trial attorneys for wrongful death, product liability, and car accidents.</p>
+            <p><strong>Phone:</strong> (256) 536-0588</p>
+            <p><strong>Email:</strong> info@mkhlawyers.com</p>
+            <p><strong>Website:</strong> <a href="https://mkhlawyers.com" target="_blank" rel="noopener noreferrer">mkhlawyers.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Harvey B. Morris</span> &mdash; Partner</li>
+              <li><span class="person-name">Joe A. King, Jr.</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Timberlake, League &amp; Brooks</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> High-profile plaintiff's firm specializing in personal injury and workers' comp.</p>
+            <p><strong>Phone:</strong> (256) 536-0770</p>
+            <p><strong>Email:</strong> info@law-injury.com</p>
+            <p><strong>Website:</strong> <a href="https://law-injury.com" target="_blank" rel="noopener noreferrer">law-injury.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Will League</span> &mdash; Partner</li>
+              <li><span class="person-name">Heath Brooks</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Wilmer &amp; Lee, P.A.</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> Multi-disciplinary firm serving business clients in civil litigation and employment law.</p>
+            <p><strong>Phone:</strong> (256) 533-0202</p>
+            <p><strong>Email:</strong> info@wilmerlee.com</p>
+            <p><strong>Website:</strong> <a href="https://wilmerandlee.com" target="_blank" rel="noopener noreferrer">wilmerandlee.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Frederick L. Fohrell</span> &mdash; Shareholder<br>
+                <span class="contact-detail">ffohrell@wilmerlee.com</span></li>
+              <li><span class="person-name">S. Dagnal Rowe</span> &mdash; Shareholder</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Wolfe, Jones, Wolfe, Hancock, Daniel &amp; South LLC</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> Local experts in real estate closings, banking law, and civil litigation.</p>
+            <p><strong>Phone:</strong> (256) 534-2205</p>
+            <p><strong>Email:</strong> info@wolfejones.com</p>
+            <p><strong>Website:</strong> <a href="https://wolfejones.com" target="_blank" rel="noopener noreferrer">wolfejones.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">William M. Hancock</span> &mdash; Managing Partner</li>
+              <li><span class="person-name">Zachary Guyse</span> &mdash; Partner<br>
+                <span class="contact-detail">zguyse@wolfejones.com</span></li>
             </ul>
           </div>
         </div>
@@ -281,128 +310,235 @@
       <!-- Medical -->
       <div class="business-card" data-city="huntsville" data-category="medical">
         <div class="card-header">
-          <h3 class="business-name">North Alabama Family Medicine</h3>
+          <h3 class="business-name">Alabama Colon &amp; Gastro, P.C.</h3>
           <span class="category-badge medical">Medical</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 808 Turner Ave SW, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 555-0201</p>
-            <p><strong>Email:</strong> appointments@nafm.example.com</p>
-            <p><strong>Website:</strong> www.nafm.example.com</p>
+            <p><strong>About:</strong> A dedicated gastroenterology practice focusing on digestive health and cancer screening.</p>
+            <p><strong>Phone:</strong> (256) 533-6488</p>
+            <p><strong>Email:</strong> info@alabamacolonandgastro.com</p>
+            <p><strong>Website:</strong> <a href="https://alabamacolonandgastro.com" target="_blank" rel="noopener noreferrer">alabamacolonandgastro.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Dr. Angela Reeves</span> &mdash; Chief Physician<br>
-                <span class="contact-detail">angela.reeves@nafm.example.com</span> | <span class="contact-detail">(256) 555-0202</span></li>
-              <li><span class="person-name">James Holbrook</span> &mdash; Office Manager<br>
-                <span class="contact-detail">james.holbrook@nafm.example.com</span></li>
+              <li><span class="person-name">Dr. Bradley Rice</span> &mdash; Gastroenterologist</li>
+              <li><span class="person-name">Dr. Benjamin Nunley</span> &mdash; Gastroenterologist</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Home Services -->
-      <div class="business-card" data-city="huntsville" data-category="home-services">
+      <div class="business-card" data-city="huntsville" data-category="medical">
         <div class="card-header">
-          <h3 class="business-name">Tennessee Valley Home Repair</h3>
-          <span class="category-badge home-services">Home Services</span>
+          <h3 class="business-name">Alabama Dermatology and Skin Specialists</h3>
+          <span class="category-badge medical">Medical</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 1425 Meridian St N, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 555-0301</p>
-            <p><strong>Email:</strong> service@tvhomerepair.example.com</p>
+            <p><strong>About:</strong> Offers comprehensive medical, surgical, and cosmetic dermatology services.</p>
+            <p><strong>Phone:</strong> (256) 534-3376</p>
+            <p><strong>Email:</strong> contact@alderm.com</p>
+            <p><strong>Website:</strong> <a href="https://alderm.com" target="_blank" rel="noopener noreferrer">alderm.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Bobby Caldwell</span> &mdash; Owner / General Contractor<br>
-                <span class="contact-detail">bobby@tvhomerepair.example.com</span> | <span class="contact-detail">(256) 555-0302</span></li>
+              <li><span class="person-name">Dr. Thomas Bender</span> &mdash; Dermatologist</li>
+              <li><span class="person-name">Dr. Ronald Johnston</span> &mdash; Dermatologist</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Accounting -->
-      <div class="business-card" data-city="huntsville" data-category="accounting">
+      <div class="business-card" data-city="huntsville" data-category="medical">
         <div class="card-header">
-          <h3 class="business-name">Cummings & Associates CPAs</h3>
-          <span class="category-badge accounting">Accounting</span>
+          <h3 class="business-name">Center for Colon &amp; Digestive Disease (HSVGI)</h3>
+          <span class="category-badge medical">Medical</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 600 Boulevard South SW, Huntsville, AL 35802</p>
-            <p><strong>Phone:</strong> (256) 555-0401</p>
-            <p><strong>Email:</strong> office@cummingscpa.example.com</p>
-            <p><strong>Website:</strong> www.cummingscpa.example.com</p>
+            <p><strong>About:</strong> Specializes in the treatment of digestive disorders, liver disease, and endoscopic procedures.</p>
+            <p><strong>Phone:</strong> (256) 533-6488</p>
+            <p><strong>Email:</strong> info@hsvgi.com</p>
+            <p><strong>Website:</strong> <a href="https://hsvgi.com" target="_blank" rel="noopener noreferrer">hsvgi.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Patricia Cummings</span> &mdash; Managing CPA<br>
-                <span class="contact-detail">patricia@cummingscpa.example.com</span> | <span class="contact-detail">(256) 555-0402</span></li>
-              <li><span class="person-name">Steven Nguyen</span> &mdash; Tax Specialist<br>
-                <span class="contact-detail">steven@cummingscpa.example.com</span></li>
+              <li><span class="person-name">Dr. Dino Ferrante</span> &mdash; Gastroenterologist</li>
+              <li><span class="person-name">Dr. Julian Billings</span> &mdash; Gastroenterologist</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Engineering -->
-      <div class="business-card" data-city="huntsville" data-category="engineering">
+      <div class="business-card" data-city="huntsville" data-category="medical">
         <div class="card-header">
-          <h3 class="business-name">Redstone Engineering Solutions</h3>
-          <span class="category-badge engineering">Engineering</span>
+          <h3 class="business-name">Clearview Cancer Institute</h3>
+          <span class="category-badge medical">Medical</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 3322 Memorial Pkwy SW, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 555-0501</p>
-            <p><strong>Email:</strong> contact@redstoneeng.example.com</p>
-            <p><strong>Website:</strong> www.redstoneeng.example.com</p>
+            <p><strong>About:</strong> One of the most advanced community-based oncology practices in the Southeast.</p>
+            <p><strong>Phone:</strong> (256) 705-4224</p>
+            <p><strong>Email:</strong> newpatientfax@ccihsv.com</p>
+            <p><strong>Website:</strong> <a href="https://clearviewcancer.com" target="_blank" rel="noopener noreferrer">clearviewcancer.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">William Park</span> &mdash; Principal Engineer<br>
-                <span class="contact-detail">william.park@redstoneeng.example.com</span> | <span class="contact-detail">(256) 555-0502</span></li>
-              <li><span class="person-name">Laura Kim</span> &mdash; Project Manager<br>
-                <span class="contact-detail">laura.kim@redstoneeng.example.com</span> | <span class="contact-detail">(256) 555-0503</span></li>
+              <li><span class="person-name">Dr. John F. Gleason Jr.</span> &mdash; Medical Director</li>
+              <li><span class="person-name">Dr. Harry J. McCarty III</span> &mdash; Radiation Oncologist</li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!-- Food & Entertainment -->
-      <div class="business-card" data-city="huntsville" data-category="food-entertainment">
+      <div class="business-card" data-city="huntsville" data-category="medical">
         <div class="card-header">
-          <h3 class="business-name">Cotton Row Kitchen &amp; Bar</h3>
-          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+          <h3 class="business-name">Crestwood Medical Center</h3>
+          <span class="category-badge medical">Medical</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 100 Southside Square, Huntsville, AL 35801</p>
-            <p><strong>Phone:</strong> (256) 555-0601</p>
-            <p><strong>Email:</strong> reservations@cottonrowkb.example.com</p>
+            <p><strong>About:</strong> A full-service acute care hospital offering robotic surgery and specialized cardiac care.</p>
+            <p><strong>Phone:</strong> (256) 429-4000</p>
+            <p><strong>Email:</strong> info@crestwoodmedcenter.com</p>
+            <p><strong>Website:</strong> <a href="https://crestwoodmedcenter.com" target="_blank" rel="noopener noreferrer">crestwoodmedcenter.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Chef Marcus Tate</span> &mdash; Owner / Executive Chef<br>
-                <span class="contact-detail">marcus@cottonrowkb.example.com</span> | <span class="contact-detail">(256) 555-0602</span></li>
-              <li><span class="person-name">Danielle Odom</span> &mdash; Events Coordinator<br>
-                <span class="contact-detail">danielle@cottonrowkb.example.com</span></li>
+              <li><span class="person-name">Garett May</span> &mdash; COO</li>
+              <li><span class="person-name">Dr. Vick DiCarlo II</span> &mdash; Chief of Staff</li>
             </ul>
           </div>
         </div>
       </div>
+
+      <div class="business-card" data-city="huntsville" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Huntsville Hospital Health System</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> The second-largest hospital in Alabama, serving as the regional referral center for North Alabama.</p>
+            <p><strong>Phone:</strong> (256) 265-1000</p>
+            <p><strong>Email:</strong> info@hhsys.org</p>
+            <p><strong>Website:</strong> <a href="https://huntsvillehospital.org" target="_blank" rel="noopener noreferrer">huntsvillehospital.org</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jeff Samz</span> &mdash; CEO</li>
+              <li><span class="person-name">Sherry Fussell</span> &mdash; Quality Officer<br>
+                <span class="contact-detail">sherry.fussell@hhsys.org</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">North Alabama ENT Associates</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> The premier provider for ear, nose, and throat care, including allergy and audiology services.</p>
+            <p><strong>Phone:</strong> (256) 536-9300</p>
+            <p><strong>Email:</strong> info@nalent.com</p>
+            <p><strong>Website:</strong> <a href="https://nalent.com" target="_blank" rel="noopener noreferrer">nalent.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Scott McCary</span> &mdash; Otolaryngologist</li>
+              <li><span class="person-name">Dr. John Kostrzewa</span> &mdash; Otolaryngologist</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Retina Specialists of North Alabama</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> Expert care for complex retinal conditions, macular degeneration, and diabetic eye disease.</p>
+            <p><strong>Phone:</strong> (256) 539-8851</p>
+            <p><strong>Email:</strong> info@rsnallc.com</p>
+            <p><strong>Website:</strong> <a href="https://rsnallc.com" target="_blank" rel="noopener noreferrer">rsnallc.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Tarek Persaud</span> &mdash; Retina Specialist</li>
+              <li><span class="person-name">Dr. Scott E. Dorin</span> &mdash; Retina Specialist</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">SportsMED Orthopedic Surgery &amp; Spine Center</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> The region's largest orthopedic practice, specializing in sports medicine and joint replacement.</p>
+            <p><strong>Phone:</strong> (256) 881-5151</p>
+            <p><strong>Email:</strong> medicalrecords@sportsmedlink.com</p>
+            <p><strong>Website:</strong> <a href="https://sportsmedalabama.com" target="_blank" rel="noopener noreferrer">sportsmedalabama.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Jimmy Raley</span> &mdash; Orthopedic Surgeon</li>
+              <li><span class="person-name">Dr. Troy Layton</span> &mdash; Orthopedic Surgeon</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card" data-city="huntsville" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">The Orthopaedic Center (TOC)</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A comprehensive orthopedic center providing pediatric, spine, and trauma care since 1974.</p>
+            <p><strong>Phone:</strong> (256) 539-2728</p>
+            <p><strong>Email:</strong> info@visittoc.com</p>
+            <p><strong>Website:</strong> <a href="https://visittoc.com" target="_blank" rel="noopener noreferrer">visittoc.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Steven L. Buckley</span> &mdash; Pediatric Orthopaedist</li>
+              <li><span class="person-name">Dr. Michael W. Cantrell</span> &mdash; Sports Medicine MD</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <!-- ============================================================ -->
