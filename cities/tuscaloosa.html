@@ -36,7 +36,8 @@
       </div>
       <div class="search-group">
         <label for="search-input">Search:</label>
-        <input type="text" id="search-input" placeholder="Business name, person, address&hellip;" oninput="filterCategory()">
+        <input type="text" id="search-input" placeholder="Enter Search Term" onkeydown="if(event.key==='Enter')filterCategory()">
+        <button type="button" class="search-btn" onclick="filterCategory()">Search</button>
       </div>
     </div>
   </nav>
