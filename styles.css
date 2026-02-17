@@ -35,22 +35,41 @@ a:hover {
 
 /* ---------- Header ---------- */
 .site-header {
-  background: linear-gradient(135deg, #9e1b32 0%, #6b1222 100%);
+  background: linear-gradient(135deg, #9e1b32 0%, #7a1427 50%, #6b1222 100%);
   color: #fff;
-  padding: 40px 0 36px;
+  padding: 48px 0 44px;
   text-align: center;
+  border-bottom: 4px solid #d4a843;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.site-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #fff;
+  border-radius: 2px;
+  bottom: -4px;
 }
 
 .site-header h1 {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .site-header .tagline {
-  margin-top: 8px;
-  font-size: 1.05rem;
-  opacity: 0.88;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  opacity: 0.92;
+  letter-spacing: 0.3px;
+  font-weight: 300;
 }
 
 /* ---------- Filter Bar ---------- */
@@ -163,13 +182,25 @@ a:hover {
 .no-results {
   display: none;
   text-align: center;
-  padding: 48px 20px;
-  color: #777;
-  font-size: 1.1rem;
+  padding: 60px 20px;
+  color: #666;
+  font-size: 1.15rem;
+  background: #fff;
+  border: 1px dashed #ccc;
+  border-radius: 12px;
+  margin: 30px 0;
 }
 
 .no-results strong {
-  color: #555;
+  display: block;
+  color: #9e1b32;
+  font-size: 1.3rem;
+  margin-bottom: 8px;
+}
+
+.no-results p + p {
+  color: #888;
+  font-size: 0.95rem;
 }
 
 /* ---------- Directory Layout ---------- */
@@ -434,6 +465,23 @@ a:hover {
   text-decoration: underline;
 }
 
+/* ---------- Results Count ---------- */
+.results-count {
+  text-align: center;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  color: #555;
+  background: #eef4ed;
+  border: 1px solid #c8dcc5;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.results-count strong {
+  color: #9e1b32;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: #2c2c2c;
@@ -446,7 +494,7 @@ a:hover {
 /* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   .site-header h1 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
   }
 
   .filter-bar .container {
@@ -469,11 +517,11 @@ a:hover {
 
 @media (max-width: 480px) {
   .site-header {
-    padding: 28px 0 24px;
+    padding: 32px 0 28px;
   }
 
   .site-header h1 {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
   }
 
   .directory {

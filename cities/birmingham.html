@@ -17,6 +17,19 @@
     </div>
   </header>
 
+  <nav class="city-links-bar">
+    <div class="container">
+      <span class="city-links-label">Browse by City:</span>
+      <ul class="city-links-list">
+        <li><a href="huntsville.html">Huntsville</a></li>
+        <li><a href="montgomery.html">Montgomery</a></li>
+        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="tuscaloosa.html">Tuscaloosa</a></li>
+        <li><a href="../index.html">All Cities</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <nav class="filter-bar">
     <div class="container">
       <div class="breadcrumb" aria-label="Breadcrumb">
@@ -203,20 +216,12 @@
 
     </section>
 
+    <div id="results-count" class="results-count"></div>
+
     <div id="no-results" class="no-results">
-      <p><strong>No businesses found.</strong></p>
+      <p><strong>No results found.</strong></p>
       <p>Try a different search term or adjust your filters.</p>
     </div>
-
-    <nav class="city-nav" aria-label="Other cities">
-      <h3 class="city-nav-heading">Browse Other Cities</h3>
-      <ul class="city-nav-list">
-        <li><a href="huntsville.html">Huntsville</a></li>
-        <li><a href="montgomery.html">Montgomery</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-        <li><a href="tuscaloosa.html">Tuscaloosa</a></li>
-      </ul>
-    </nav>
 
   </main>
 
@@ -232,6 +237,9 @@
       var searchTerm = document.getElementById('search-input').value.trim().toLowerCase();
       var cards = document.querySelectorAll('.business-card');
       var noResults = document.getElementById('no-results');
+      var resultsCount = document.getElementById('results-count');
+      var heading = document.querySelector('.city-heading');
+      var isFiltering = (category !== 'all' || searchTerm !== '');
 
       var visibleCount = 0;
       cards.forEach(function(card) {
@@ -248,8 +256,21 @@
         if (visible) visibleCount++;
       });
 
+      if (heading) {
+        heading.style.display = isFiltering ? 'none' : '';
+      }
+
+      if (resultsCount) {
+        if (isFiltering && visibleCount > 0) {
+          resultsCount.style.display = '';
+          resultsCount.innerHTML = '<strong>' + visibleCount + '</strong> business' + (visibleCount !== 1 ? 'es' : '') + ' found';
+        } else {
+          resultsCount.style.display = 'none';
+        }
+      }
+
       if (noResults) {
-        noResults.style.display = visibleCount === 0 ? '' : 'none';
+        noResults.style.display = (isFiltering && visibleCount === 0) ? '' : 'none';
       }
     }
   </script>
