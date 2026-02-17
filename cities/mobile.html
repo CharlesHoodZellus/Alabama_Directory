@@ -39,12 +39,12 @@
         <label for="category-filter">Filter by Category:</label>
         <select id="category-filter" onchange="filterCategory()">
           <option value="all">All Categories</option>
-          <option value="legal">Legal</option>
-          <option value="medical">Medical</option>
-          <option value="home-services">Home Services</option>
           <option value="accounting">Accounting</option>
           <option value="engineering">Engineering</option>
           <option value="food-entertainment">Food &amp; Entertainment</option>
+          <option value="home-services">Home Services</option>
+          <option value="legal">Legal</option>
+          <option value="medical">Medical</option>
         </select>
       </div>
       <div class="search-group">
@@ -60,102 +60,250 @@
     <section class="city-section" data-city="mobile">
       <h2 class="city-heading">All Mobile Businesses</h2>
 
-      <!-- Legal -->
-      <div class="business-card" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Gulf Coast Legal Services</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 205 Government St, Mobile, AL 36602</p>
-            <p><strong>Phone:</strong> (251) 555-0101</p>
-            <p><strong>Email:</strong> info@gulfcoastlegal.example.com</p>
-            <p><strong>Website:</strong> www.gulfcoastlegal.example.com</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Evelyn Marsh</span> &mdash; Managing Partner<br>
-                <span class="contact-detail">evelyn.marsh@gulfcoastlegal.example.com</span> | <span class="contact-detail">(251) 555-0102</span></li>
-              <li><span class="person-name">Richard Coleman</span> &mdash; Litigation Attorney<br>
-                <span class="contact-detail">richard.coleman@gulfcoastlegal.example.com</span> | <span class="contact-detail">(251) 555-0103</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Medical -->
-      <div class="business-card" data-category="medical">
-        <div class="card-header">
-          <h3 class="business-name">Azalea City Urgent Care</h3>
-          <span class="category-badge medical">Medical</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 3100 Dauphin St, Mobile, AL 36606</p>
-            <p><strong>Phone:</strong> (251) 555-0201</p>
-            <p><strong>Email:</strong> care@azaleaurgent.example.com</p>
-            <p><strong>Website:</strong> www.azaleaurgent.example.com</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Dr. Samuel Ortega</span> &mdash; Medical Director<br>
-                <span class="contact-detail">samuel.ortega@azaleaurgent.example.com</span> | <span class="contact-detail">(251) 555-0202</span></li>
-              <li><span class="person-name">Brenda Lewis</span> &mdash; Head Nurse<br>
-                <span class="contact-detail">brenda.lewis@azaleaurgent.example.com</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Home Services -->
-      <div class="business-card" data-category="home-services">
-        <div class="card-header">
-          <h3 class="business-name">Port City HVAC &amp; Electrical</h3>
-          <span class="category-badge home-services">Home Services</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 950 Schillinger Rd S, Mobile, AL 36695</p>
-            <p><strong>Phone:</strong> (251) 555-0301</p>
-            <p><strong>Email:</strong> service@portcityhvac.example.com</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Frank Delacroix</span> &mdash; Owner / Master Electrician<br>
-                <span class="contact-detail">frank@portcityhvac.example.com</span> | <span class="contact-detail">(251) 555-0302</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <!-- Accounting -->
       <div class="business-card" data-category="accounting">
         <div class="card-header">
-          <h3 class="business-name">Bayou Bookkeeping &amp; Tax</h3>
+          <h3 class="business-name">Avizo Group</h3>
           <span class="category-badge accounting">Accounting</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 61 St. Joseph St, Suite 300, Mobile, AL 36602</p>
-            <p><strong>Phone:</strong> (251) 555-0401</p>
-            <p><strong>Email:</strong> info@bayoubookkeeping.example.com</p>
-            <p><strong>Website:</strong> www.bayoubookkeeping.example.com</p>
+            <p><strong>About:</strong> A forward-thinking CPA firm offering tax, assurance, and advisory services.</p>
+            <p><strong>Address:</strong> 3737 Government Blvd Suite 101, Mobile, AL 36693</p>
+            <p><strong>Phone:</strong> (251) 476-4010</p>
+            <p><strong>Email:</strong> info@avizogroup.com</p>
+            <p><strong>Website:</strong> <a href="https://avizogroup.com/" target="_blank" rel="noopener noreferrer">avizogroup.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Catherine Thibodaux</span> &mdash; Owner / CPA<br>
-                <span class="contact-detail">catherine@bayoubookkeeping.example.com</span> | <span class="contact-detail">(251) 555-0402</span></li>
-              <li><span class="person-name">Jerome Harris</span> &mdash; Staff Accountant<br>
-                <span class="contact-detail">jerome@bayoubookkeeping.example.com</span></li>
+              <li><span class="person-name">Rachel Young</span> &mdash; Managing Shareholder<br>
+                <span class="contact-detail">ryoung@avizogroup.com</span></li>
+              <li><span class="person-name">Javier Ahumada</span> &mdash; Accountant<br>
+                <span class="contact-detail">jahumada@avizogroup.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Carr, Riggs &amp; Ingram (CRI)</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A top 20 national accounting firm with a strong local team for audit and tax.</p>
+            <p><strong>Address:</strong> 3600 Springhill Memorial Dr N Suite 200, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 473-5550</p>
+            <p><strong>Email:</strong> info@criadv.com</p>
+            <p><strong>Website:</strong> <a href="https://www.criadv.com/" target="_blank" rel="noopener noreferrer">www.criadv.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">William H. Carr</span> &mdash; Partner<br>
+                <span class="contact-detail">wcarr@criadv.com</span></li>
+              <li><span class="person-name">Robert P. Riggs</span> &mdash; Partner<br>
+                <span class="contact-detail">rriggs@criadv.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Crow Shields Bailey</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A full-service accounting firm serving the Gulf Coast for over 30 years.</p>
+            <p><strong>Address:</strong> 3742 Professional Pkwy, Mobile, AL 36609</p>
+            <p><strong>Phone:</strong> (251) 343-1012</p>
+            <p><strong>Email:</strong> info@csbcpa.com</p>
+            <p><strong>Website:</strong> <a href="https://www.csbcpa.com/" target="_blank" rel="noopener noreferrer">www.csbcpa.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Gina McKellar</span> &mdash; Managing Shareholder<br>
+                <span class="contact-detail">ginam@csbcpa.com</span></li>
+              <li><span class="person-name">Joey Bailey</span> &mdash; Shareholder<br>
+                <span class="contact-detail">joeyb@csbcpa.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Grant, Sanders &amp; Taylor</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A certified public accounting firm providing tax, audit, and consulting services.</p>
+            <p><strong>Address:</strong> 1106 Dauphin St, Mobile, AL 36604</p>
+            <p><strong>Phone:</strong> (251) 344-2450</p>
+            <p><strong>Email:</strong> info@gstcpas.com</p>
+            <p><strong>Website:</strong> <a href="https://gstcpas.com/" target="_blank" rel="noopener noreferrer">gstcpas.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">J. Thomas Sanders</span> &mdash; Partner</li>
+              <li><span class="person-name">Chad Lipscomb</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Gruenloh, Matz &amp; Associates</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A local accounting firm specializing in tax preparation and business consulting.</p>
+            <p><strong>Address:</strong> 1063 Hillcrest Rd, Mobile, AL 36695</p>
+            <p><strong>Phone:</strong> (251) 639-7100</p>
+            <p><strong>Email:</strong> admin@gruenlohmatz.com</p>
+            <p><strong>Website:</strong> <a href="https://www.gruenlohmatz.com/" target="_blank" rel="noopener noreferrer">www.gruenlohmatz.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Collena Matz</span> &mdash; Partner<br>
+                <span class="contact-detail">CMatz@GruenlohMatz.com</span></li>
+              <li><span class="person-name">Pat Gruenloh</span> &mdash; Partner<br>
+                <span class="contact-detail">PGruenloh@GruenlohMatz.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Hieronymus CPAs</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A historic Mobile CPA firm focused on personal service and financial integrity.</p>
+            <p><strong>Address:</strong> 4565 Ziegler Blvd, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 344-7835</p>
+            <p><strong>Email:</strong> info@hieronymuscpas.com</p>
+            <p><strong>Website:</strong> <a href="https://hieronymuscpas.com/" target="_blank" rel="noopener noreferrer">hieronymuscpas.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Mark Hieronymus</span> &mdash; Partner<br>
+                <span class="contact-detail">markh@hieronymuscpas.com</span></li>
+              <li><span class="person-name">Thomas J. Hieronymus</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Mostellar &amp; Shreve, LLP</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A long-standing firm offering audit, tax, and small business accounting services.</p>
+            <p><strong>Address:</strong> 2305 Government St, Mobile, AL 36606</p>
+            <p><strong>Phone:</strong> (251) 476-0506</p>
+            <p><strong>Email:</strong> info@mostellarshreve.com</p>
+            <p><strong>Website:</strong> <a href="https://mostellarshreve.com/" target="_blank" rel="noopener noreferrer">mostellarshreve.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Lewis T. Shreve</span> &mdash; Partner<br>
+                <span class="contact-detail">lshreve@mostellarshreve.com</span></li>
+              <li><span class="person-name">Jeff Lawrence</span> &mdash; Partner<br>
+                <span class="contact-detail">jlawrence@mostellarshreve.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Russell Thompson Butler &amp; Houston</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A regional LLP providing comprehensive financial solutions to businesses and individuals.</p>
+            <p><strong>Address:</strong> 64 Dauphin St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 473-5550</p>
+            <p><strong>Email:</strong> info@rtbh.com</p>
+            <p><strong>Website:</strong> <a href="https://www.rtbh.com/" target="_blank" rel="noopener noreferrer">www.rtbh.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Skip Brown</span> &mdash; Partner<br>
+                <span class="contact-detail">sbrown@rtbh.com</span></li>
+              <li><span class="person-name">Clay Jones</span> &mdash; Partner<br>
+                <span class="contact-detail">cjones@rtbh.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Smith, Dukes &amp; Buckalew</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> One of the oldest independent CPA firms in the Mobile Gulf Coast community.</p>
+            <p><strong>Address:</strong> 3800 Airport Blvd Suite 300, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 344-5400</p>
+            <p><strong>Email:</strong> info@smithdukes.com</p>
+            <p><strong>Website:</strong> <a href="https://smithdukes.com/" target="_blank" rel="noopener noreferrer">smithdukes.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Mark P. Wiles</span> &mdash; Partner<br>
+                <span class="contact-detail">mwiles@smithdukes.com</span></li>
+              <li><span class="person-name">David A. Duke</span> &mdash; Partner<br>
+                <span class="contact-detail">dduke@smithdukes.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Wilkins Miller</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> The largest accounting and advisory firm in the Mobile Bay region.</p>
+            <p><strong>Address:</strong> 41 W I-65 Service Rd N #400, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 410-6700</p>
+            <p><strong>Email:</strong> info@wilkinsmiller.com</p>
+            <p><strong>Website:</strong> <a href="https://wilkinsmiller.com/" target="_blank" rel="noopener noreferrer">wilkinsmiller.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Michael Kintz</span> &mdash; Partner<br>
+                <span class="contact-detail">mkintz@wilkinsmiller.com</span></li>
+              <li><span class="person-name">Allen Carroll</span> &mdash; Partner<br>
+                <span class="contact-detail">acarroll@wilkinsmiller.com</span></li>
             </ul>
           </div>
         </div>
@@ -164,25 +312,161 @@
       <!-- Engineering -->
       <div class="business-card" data-category="engineering">
         <div class="card-header">
-          <h3 class="business-name">Mobile Bay Civil Engineers</h3>
+          <h3 class="business-name">Cowles, Murphy, Glover &amp; Associates</h3>
           <span class="category-badge engineering">Engineering</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 1204 Beltline Hwy, Mobile, AL 36609</p>
-            <p><strong>Phone:</strong> (251) 555-0501</p>
-            <p><strong>Email:</strong> projects@mobilebayeng.example.com</p>
-            <p><strong>Website:</strong> www.mobilebayeng.example.com</p>
+            <p><strong>About:</strong> A multidisciplinary design firm offering civil, structural, and mechanical engineering.</p>
+            <p><strong>Address:</strong> 457 St Michael St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 433-1611</p>
+            <p><strong>Email:</strong> info@cmg-a.com</p>
+            <p><strong>Website:</strong> <a href="http://cmg-a.com/" target="_blank" rel="noopener noreferrer">cmg-a.com</a></p>
           </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">George Patterson, PE</span> &mdash; Senior Engineer<br>
-                <span class="contact-detail">george.patterson@mobilebayeng.example.com</span> | <span class="contact-detail">(251) 555-0502</span></li>
-              <li><span class="person-name">Amy Tran</span> &mdash; Environmental Specialist<br>
-                <span class="contact-detail">amy.tran@mobilebayeng.example.com</span></li>
-            </ul>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Driven Engineering</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A civil engineering firm specializing in transportation and site design.</p>
+            <p><strong>Address:</strong> 8005 Morris Hill Rd, Semmes, AL 36575</p>
+            <p><strong>Phone:</strong> (251) 607-6228</p>
+            <p><strong>Email:</strong> info@drivenengineering.com</p>
+            <p><strong>Website:</strong> <a href="https://drivenengineering.com/" target="_blank" rel="noopener noreferrer">drivenengineering.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Goodwyn Mills Cawood (GMC)</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> One of the largest comprehensive architecture and engineering firms in the Southeast.</p>
+            <p><strong>Address:</strong> 11 N Water St Suite 15250, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 460-4006</p>
+            <p><strong>Email:</strong> info@gmcnetwork.com</p>
+            <p><strong>Website:</strong> <a href="https://www.gmcnetwork.com/" target="_blank" rel="noopener noreferrer">www.gmcnetwork.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Hargrove Engineers + Constructors</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A massive EPC firm headquartered in Mobile serving industrial clients globally.</p>
+            <p><strong>Address:</strong> 20 S Royal St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 476-0605</p>
+            <p><strong>Email:</strong> info@hargrove-epc.com</p>
+            <p><strong>Website:</strong> <a href="https://hargrove-epc.com/" target="_blank" rel="noopener noreferrer">hargrove-epc.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Kimley-Horn</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A planning and design consultancy with a strong local presence in Mobile.</p>
+            <p><strong>Address:</strong> 11 N Water St Suite 9290, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 263-8350</p>
+            <p><strong>Email:</strong> info@kimley-horn.com</p>
+            <p><strong>Website:</strong> <a href="https://www.kimley-horn.com/" target="_blank" rel="noopener noreferrer">www.kimley-horn.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">McCrory &amp; Williams</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A civil engineering and land surveying firm operating since 1978.</p>
+            <p><strong>Address:</strong> 3207 International Dr G, Mobile, AL 36606</p>
+            <p><strong>Phone:</strong> (251) 476-4720</p>
+            <p><strong>Email:</strong> info@mcwinc.com</p>
+            <p><strong>Website:</strong> <a href="https://mcwinc.com/" target="_blank" rel="noopener noreferrer">mcwinc.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Mott MacDonald</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A global engineering consultancy with a key office for Gulf Coast infrastructure.</p>
+            <p><strong>Address:</strong> 11 N Water St # 20290, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 343-4366</p>
+            <p><strong>Email:</strong> info@mottmac.com</p>
+            <p><strong>Website:</strong> <a href="https://www.mottmac.com/" target="_blank" rel="noopener noreferrer">www.mottmac.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Speakman Engineering</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A civil engineering firm focused on land development and municipal projects.</p>
+            <p><strong>Address:</strong> 2250 Government St, Mobile, AL 36606</p>
+            <p><strong>Phone:</strong> (251) 459-7212</p>
+            <p><strong>Email:</strong> info@speakmanengineering.com</p>
+            <p><strong>Website:</strong> <a href="http://speakmanengineering.com/" target="_blank" rel="noopener noreferrer">speakmanengineering.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Thompson Engineering</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> An employee-owned multidisciplinary engineering and architecture firm.</p>
+            <p><strong>Address:</strong> 2970 Cottage Hill Rd Suite 190, Mobile, AL 36606</p>
+            <p><strong>Phone:</strong> (251) 666-2443</p>
+            <p><strong>Email:</strong> info@thompsonengineering.com</p>
+            <p><strong>Website:</strong> <a href="https://www.thompsonengineering.com/" target="_blank" rel="noopener noreferrer">www.thompsonengineering.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Volkert, Inc.</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> An infrastructure engineering firm headquartered in Mobile for nearly a century.</p>
+            <p><strong>Address:</strong> 11 N Water St Suite 4000, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 342-1070</p>
+            <p><strong>Email:</strong> info@volkert.com</p>
+            <p><strong>Website:</strong> <a href="https://volkert.com/" target="_blank" rel="noopener noreferrer">volkert.com</a></p>
           </div>
         </div>
       </div>
@@ -190,23 +474,799 @@
       <!-- Food & Entertainment -->
       <div class="business-card" data-category="food-entertainment">
         <div class="card-header">
-          <h3 class="business-name">Mardi Gras Eats &amp; Beats</h3>
+          <h3 class="business-name">Briquettes Steakhouse</h3>
           <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 309 Dauphin St, Mobile, AL 36602</p>
-            <p><strong>Phone:</strong> (251) 555-0601</p>
-            <p><strong>Email:</strong> bookings@mardigraseats.example.com</p>
+            <p><strong>About:</strong> A locally owned steakhouse known for its wood-fire grilled steaks.</p>
+            <p><strong>Address:</strong> 701 Hillcrest Rd, Mobile, AL 36695</p>
+            <p><strong>Phone:</strong> (251) 460-0015</p>
+            <p><strong>Email:</strong> info@briquettessteakhouse.com</p>
+            <p><strong>Website:</strong> <a href="https://www.briquettessteakhouse.com/" target="_blank" rel="noopener noreferrer">www.briquettessteakhouse.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Callaghan&#x27;s Irish Social Club</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A historic Irish pub and music venue famous for its burgers and atmosphere.</p>
+            <p><strong>Address:</strong> 916 Charleston St, Mobile, AL 36604</p>
+            <p><strong>Phone:</strong> (251) 433-9374</p>
+            <p><strong>Email:</strong> info@callaghansirishsocialclub.com</p>
+            <p><strong>Website:</strong> <a href="https://www.callaghansirishsocialclub.com/" target="_blank" rel="noopener noreferrer">www.callaghansirishsocialclub.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Dauphin&#x27;s</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A fine dining restaurant located on the 34th floor of the RSA Trustmark Building.</p>
+            <p><strong>Address:</strong> 107 St Francis St Suite 3400, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 444-0200</p>
+            <p><strong>Email:</strong> info@godauphins.com</p>
+            <p><strong>Website:</strong> <a href="https://godauphins.com/" target="_blank" rel="noopener noreferrer">godauphins.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Dumbwaiter Restaurant</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A southern bistro offering quirky, nostalgic dishes in a historic setting.</p>
+            <p><strong>Address:</strong> 167 Dauphin St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 445-3802</p>
+            <p><strong>Email:</strong> info@dumbwaiterrestaurant.com</p>
+            <p><strong>Website:</strong> <a href="https://dumbwaiterrestaurant.com/" target="_blank" rel="noopener noreferrer">dumbwaiterrestaurant.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Grace</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A rooftop bar and restaurant blending upscale food with a casual vibe.</p>
+            <p><strong>Address:</strong> 555 Dauphin St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 289-9133</p>
+            <p><strong>Email:</strong> info@gracemobile.com</p>
+            <p><strong>Website:</strong> <a href="https://www.gracemobile.com/" target="_blank" rel="noopener noreferrer">www.gracemobile.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Noja</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A fine dining establishment featuring a fusion of Mediterranean and Asian flavors.</p>
+            <p><strong>Address:</strong> 6 N Jackson St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 433-0377</p>
+            <p><strong>Email:</strong> info@nojamobile.com</p>
+            <p><strong>Website:</strong> <a href="https://nojamobile.com/" target="_blank" rel="noopener noreferrer">nojamobile.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Pour Baby</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A wine bar and bistro offering a wide selection of wines and tapas.</p>
+            <p><strong>Address:</strong> 6808 Airport Blvd, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 343-3555</p>
+            <p><strong>Email:</strong> info@pour-baby.com</p>
+            <p><strong>Website:</strong> <a href="https://pour-baby.com/" target="_blank" rel="noopener noreferrer">pour-baby.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Squid Ink</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> An eclectic gastro-pub offering diverse eats and creative cocktails.</p>
+            <p><strong>Address:</strong> 102 Dauphin St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 405-0031</p>
+            <p><strong>Email:</strong> info@squidinkmobile.com</p>
+            <p><strong>Website:</strong> <a href="https://squidinkmobile.com/" target="_blank" rel="noopener noreferrer">squidinkmobile.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">The Noble South</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A farm-to-table restaurant highlighting modern southern cuisine.</p>
+            <p><strong>Address:</strong> 203 Dauphin St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 690-6824</p>
+            <p><strong>Email:</strong> info@thenoblesouthmobile.com</p>
+            <p><strong>Website:</strong> <a href="https://www.thenoblesouthmobile.com/" target="_blank" rel="noopener noreferrer">www.thenoblesouthmobile.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">The Royal Scam</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A casual fine dining spot known for its steaks, seafood, and courtyard.</p>
+            <p><strong>Address:</strong> 72 S Royal St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 432-7226</p>
+            <p><strong>Email:</strong> info@royalscammobile.com</p>
+            <p><strong>Website:</strong> <a href="https://www.royalscammobile.com/" target="_blank" rel="noopener noreferrer">www.royalscammobile.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Action Heating &amp; Air</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> An HVAC company providing installation and repair services since 1996.</p>
+            <p><strong>Address:</strong> 2715 SpringHill Ave, Mobile, AL 36607</p>
+            <p><strong>Phone:</strong> (251) 272-5900</p>
+            <p><strong>Email:</strong> info@callaction.net</p>
+            <p><strong>Website:</strong> <a href="https://callaction.net/" target="_blank" rel="noopener noreferrer">callaction.net</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Batchelor&#x27;s Service</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A plumbing, heating, and air conditioning service provider since 1967.</p>
+            <p><strong>Address:</strong> 1815 Butler St, Mobile, AL 36617</p>
+            <p><strong>Phone:</strong> (251) 626-0550</p>
+            <p><strong>Email:</strong> info@batchelorsservice.com</p>
+            <p><strong>Website:</strong> <a href="https://www.batchelorsservice.com/" target="_blank" rel="noopener noreferrer">www.batchelorsservice.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Coastal Foundation Repair</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A specialist in foundation repair and waterproofing for residential homes.</p>
+            <p><strong>Address:</strong> 312 Schillinger Rd S, Mobile, AL 36695</p>
+            <p><strong>Phone:</strong> (251) 473-9808</p>
+            <p><strong>Email:</strong> info@coastalfoundationrepair.com</p>
+            <p><strong>Website:</strong> <a href="https://coastalfoundationrepair.com/" target="_blank" rel="noopener noreferrer">coastalfoundationrepair.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Davies Air Design</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A family-owned HVAC company serving Mobile for over 30 years.</p>
+            <p><strong>Address:</strong> 2501 S Beltline Hwy, Mobile, AL 36606</p>
+            <p><strong>Phone:</strong> (251) 369-6556</p>
+            <p><strong>Email:</strong> info@call-dad.com</p>
+            <p><strong>Website:</strong> <a href="https://www.call-dad.com/" target="_blank" rel="noopener noreferrer">www.call-dad.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Grayson Air Conditioning</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A reliable HVAC contractor offering residential and commercial services.</p>
+            <p><strong>Address:</strong> 1355 Butler Dr, Mobile, AL 36693</p>
+            <p><strong>Phone:</strong> (251) 633-5665</p>
+            <p><strong>Email:</strong> info@graysonairconditioning.com</p>
+            <p><strong>Website:</strong> <a href="https://www.graysonairconditioning.com/" target="_blank" rel="noopener noreferrer">www.graysonairconditioning.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Hansen Heating &amp; Air</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A fast-growing home service company covering HVAC, plumbing, and electrical.</p>
+            <p><strong>Address:</strong> 837 S Birchwood Dr, Mobile, AL 36693</p>
+            <p><strong>Phone:</strong> (251) 471-3047</p>
+            <p><strong>Email:</strong> info@hansenair.com</p>
+            <p><strong>Website:</strong> <a href="https://hansenair.com/" target="_blank" rel="noopener noreferrer">hansenair.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Port City Fence</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A local fencing contractor providing residential and commercial installations.</p>
+            <p><strong>Address:</strong> 10145 Airport Blvd, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 605-6499</p>
+            <p><strong>Email:</strong> info@portcityfence.com</p>
+            <p><strong>Website:</strong> <a href="https://portcityfence.com/" target="_blank" rel="noopener noreferrer">portcityfence.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Proshield Termite &amp; Pest Control</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A family-owned pest control service for termites, mosquitoes, and general pests.</p>
+            <p><strong>Address:</strong> 7330 Moffett Rd, Mobile, AL 36618</p>
+            <p><strong>Phone:</strong> (251) 776-7378</p>
+            <p><strong>Email:</strong> info@myproshieldpest.com</p>
+            <p><strong>Website:</strong> <a href="https://myproshieldpest.com/" target="_blank" rel="noopener noreferrer">myproshieldpest.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Surfside Air Conditioning</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> An HVAC service provider focusing on residential repairs and installations.</p>
+            <p><strong>Address:</strong> 3981 Government Blvd, Mobile, AL 36693</p>
+            <p><strong>Phone:</strong> (251) 338-9252</p>
+            <p><strong>Email:</strong> info@surfsideair.com</p>
+            <p><strong>Website:</strong> <a href="https://surfsideair.com/" target="_blank" rel="noopener noreferrer">surfsideair.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Walley Plumbing</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A plumbing repair company serving residential clients in the Mobile area.</p>
+            <p><strong>Address:</strong> 4520 Halls Mill Rd, Mobile, AL 36693</p>
+            <p><strong>Phone:</strong> (251) 554-9221</p>
+            <p><strong>Email:</strong> info@walleyplumbingcompany.com</p>
+            <p><strong>Website:</strong> <a href="https://walleyplumbingcompany.com/" target="_blank" rel="noopener noreferrer">walleyplumbingcompany.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal -->
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Briskman &amp; Binion, P.C.</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A law firm specializing in personal injury and general litigation.</p>
+            <p><strong>Address:</strong> 205 Church St, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 433-7600</p>
+            <p><strong>Email:</strong> info@briskman-binion.com</p>
+            <p><strong>Website:</strong> <a href="https://www.briskman-binion.com/" target="_blank" rel="noopener noreferrer">www.briskman-binion.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Monique Boudreaux</span> &mdash; Owner / General Manager<br>
-                <span class="contact-detail">monique@mardigraseats.example.com</span> | <span class="contact-detail">(251) 555-0602</span></li>
-              <li><span class="person-name">Keith Washington</span> &mdash; Entertainment Booker<br>
-                <span class="contact-detail">keith@mardigraseats.example.com</span></li>
+              <li><span class="person-name">Mack B. Binion</span> &mdash; Shareholder<br>
+                <span class="contact-detail">mbinion@briskman-binion.com</span></li>
+              <li><span class="person-name">Donald M. Briskman</span> &mdash; Shareholder<br>
+                <span class="contact-detail">dbriskman@briskman-binion.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Burr &amp; Forman LLP</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A regional law firm with a major office in the RSA Battle House Tower.</p>
+            <p><strong>Address:</strong> 11 N Water St #1200, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 344-5151</p>
+            <p><strong>Email:</strong> info@burr.com</p>
+            <p><strong>Website:</strong> <a href="https://www.burr.com/" target="_blank" rel="noopener noreferrer">www.burr.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Ricardo Woods</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">rwoods@burr.com</span></li>
+              <li><span class="person-name">Forrest Latta</span> &mdash; Partner<br>
+                <span class="contact-detail">forrest.latta@burr.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Cunningham Bounds, LLC</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A premier plaintiff&#x27;s trial firm handling complex litigation and injury cases.</p>
+            <p><strong>Address:</strong> 1601 Dauphin St, Mobile, AL 36604</p>
+            <p><strong>Phone:</strong> (251) 471-6191</p>
+            <p><strong>Email:</strong> info@cunninghambounds.com</p>
+            <p><strong>Website:</strong> <a href="https://www.cunninghambounds.com/" target="_blank" rel="noopener noreferrer">www.cunninghambounds.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">William E. Bonner</span> &mdash; Partner<br>
+                <span class="contact-detail">web@cunninghambounds.com</span></li>
+              <li><span class="person-name">Sarah M. Austin</span> &mdash; Partner<br>
+                <span class="contact-detail">sma@cunninghambounds.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Gardberg &amp; Clausen, P.C.</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A law firm dedicated to social security disability and veterans&#x27; benefits.</p>
+            <p><strong>Address:</strong> 1009 Dauphin St, Mobile, AL 36604</p>
+            <p><strong>Phone:</strong> (251) 343-1111</p>
+            <p><strong>Email:</strong> info@gardberglaw.net</p>
+            <p><strong>Website:</strong> <a href="https://www.gardberglaw.net/" target="_blank" rel="noopener noreferrer">www.gardberglaw.net</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Colin Kemmerly</span> &mdash; Partner</li>
+              <li><span class="person-name">Joseph C. Gardberg</span> &mdash; Founder</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Greene &amp; Phillips</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A prominent personal injury firm known for its local &quot;Call Us&quot; marketing.</p>
+            <p><strong>Address:</strong> 51 N Florida St, Mobile, AL 36607</p>
+            <p><strong>Phone:</strong> (251) 478-1115</p>
+            <p><strong>Email:</strong> info@greenephillips.com</p>
+            <p><strong>Website:</strong> <a href="https://www.greenephillips.com/" target="_blank" rel="noopener noreferrer">www.greenephillips.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">David Greene</span> &mdash; Partner</li>
+              <li><span class="person-name">Will Phillips</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Hand Arendall Harrison Sale</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A full-service law firm with a deep history in the Mobile business community.</p>
+            <p><strong>Address:</strong> 104 St Francis St Suite 300, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 432-5511</p>
+            <p><strong>Email:</strong> info@handfirm.com</p>
+            <p><strong>Website:</strong> <a href="https://www.handfirm.com/" target="_blank" rel="noopener noreferrer">www.handfirm.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Preston Bolt</span> &mdash; Member<br>
+                <span class="contact-detail">pbolt@handfirm.com</span></li>
+              <li><span class="person-name">Roger Bates</span> &mdash; Member<br>
+                <span class="contact-detail">rbates@handfirm.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Helmsing Leach</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A defense-oriented litigation firm representing businesses and professionals.</p>
+            <p><strong>Address:</strong> 150 Government St # 2000, Mobile, AL 36602</p>
+            <p><strong>Phone:</strong> (251) 432-5521</p>
+            <p><strong>Email:</strong> info@helmsinglaw.com</p>
+            <p><strong>Website:</strong> <a href="https://www.helmsinglaw.com/" target="_blank" rel="noopener noreferrer">www.helmsinglaw.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">James B. Newman</span> &mdash; Partner<br>
+                <span class="contact-detail">jbn@helmsinglaw.com</span></li>
+              <li><span class="person-name">Joseph T. Dukes</span> &mdash; Partner<br>
+                <span class="contact-detail">jtd@helmsinglaw.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Moore Law Firm</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A personal injury practice serving accident victims in Mobile.</p>
+            <p><strong>Address:</strong> 256 N Joachim St, Mobile, AL 36603</p>
+            <p><strong>Phone:</strong> (251) 445-7602</p>
+            <p><strong>Email:</strong> info@moorelawfirm-al.com</p>
+            <p><strong>Website:</strong> <a href="https://www.moorelawfirm-al.com/" target="_blank" rel="noopener noreferrer">www.moorelawfirm-al.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Stephen C. Moore</span> &mdash; Partner<br>
+                <span class="contact-detail">steve@moorelawfirm-al.com</span></li>
+              <li><span class="person-name">Frederick J. Moore</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Silver &amp; Voit</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A firm specializing in estate planning, probate, and elder law.</p>
+            <p><strong>Address:</strong> 4317 Downtowner Loop N, Mobile, AL 36609</p>
+            <p><strong>Phone:</strong> (251) 432-6691</p>
+            <p><strong>Email:</strong> info@silvervoit.com</p>
+            <p><strong>Website:</strong> <a href="https://silvervoit.com/" target="_blank" rel="noopener noreferrer">silvervoit.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Rick Silver</span> &mdash; Partner</li>
+              <li><span class="person-name">Lawrence Voit</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Tobias &amp; Comer Law, LLC</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A boutique firm focusing on personal injury, maritime, and wrongful death.</p>
+            <p><strong>Address:</strong> 1203 Dauphin St, Mobile, AL 36604</p>
+            <p><strong>Phone:</strong> (251) 432-5001</p>
+            <p><strong>Email:</strong> info@tobiascomerlaw.com</p>
+            <p><strong>Website:</strong> <a href="https://www.tobiascomerlaw.com/" target="_blank" rel="noopener noreferrer">www.tobiascomerlaw.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Desmond V. Tobias</span> &mdash; Partner<br>
+                <span class="contact-detail">dtobias@tobiascomerlaw.com</span></li>
+              <li><span class="person-name">Bryan E. Comer</span> &mdash; Partner<br>
+                <span class="contact-detail">bcomer@tobiascomerlaw.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Alabama Medical Group</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A multi-specialty practice located at Mobile Infirmary offering diverse care.</p>
+            <p><strong>Address:</strong> 101 Memorial Hospital Dr # 200, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 414-5900</p>
+            <p><strong>Email:</strong> info@alabamamedicalgroup.com</p>
+            <p><strong>Website:</strong> <a href="https://www.alabamamedicalgroup.com/" target="_blank" rel="noopener noreferrer">www.alabamamedicalgroup.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jerry G. Arnold, Jr.</span> &mdash; Physician</li>
+              <li><span class="person-name">Edward G. Carlos</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Alabama Orthopaedic Clinic</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A comprehensive orthopedic center providing surgery and therapy services.</p>
+            <p><strong>Address:</strong> 3601 Dauphin St, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 410-3600</p>
+            <p><strong>Email:</strong> inquiries@alortho.com</p>
+            <p><strong>Website:</strong> <a href="https://www.alortho.com/" target="_blank" rel="noopener noreferrer">www.alortho.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Tim S. Revels</span> &mdash; Physician</li>
+              <li><span class="person-name">Suanne White-Spunner</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Cardiology Associates of Mobile</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A leading heart health clinic with board-certified cardiologists.</p>
+            <p><strong>Address:</strong> 6701 Airport Blvd Suite A101, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 607-9797</p>
+            <p><strong>Email:</strong> info@cardassoc.com</p>
+            <p><strong>Website:</strong> <a href="https://cardassoc.com/" target="_blank" rel="noopener noreferrer">cardassoc.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Kendall Sawyer Douglass</span> &mdash; Physician</li>
+              <li><span class="person-name">John M. Galla</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Coastal OB/GYN</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A women&#x27;s health clinic providing obstetrics and gynecological care.</p>
+            <p><strong>Address:</strong> 3715 Dauphin St #210, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 361-2595</p>
+            <p><strong>Email:</strong> info@coastalobgyn.com</p>
+            <p><strong>Website:</strong> <a href="https://www.coastalobgyn.com/" target="_blank" rel="noopener noreferrer">www.coastalobgyn.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Amy McCoy</span> &mdash; Physician</li>
+              <li><span class="person-name">Brooke Lenz</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Diagnostic &amp; Medical Clinic</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A large multi-specialty clinic affiliated with Infirmary Health.</p>
+            <p><strong>Address:</strong> 1700 Springhill Ave Suite 100, Mobile, AL 36604</p>
+            <p><strong>Phone:</strong> (251) 435-1200</p>
+            <p><strong>Email:</strong> info@infirmaryhealth.org</p>
+            <p><strong>Website:</strong> <a href="https://www.infirmaryhealth.org/" target="_blank" rel="noopener noreferrer">www.infirmaryhealth.org</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Mark Nix</span> &mdash; CEO (System)</li>
+              <li><span class="person-name">Hill Hill</span> &mdash; Medical Director</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Greater Mobile Urgent Care</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A walk-in clinic providing immediate care for non-life-threatening issues.</p>
+            <p><strong>Address:</strong> 2350 Schillinger Rd S, Mobile, AL 36695</p>
+            <p><strong>Phone:</strong> (251) 633-0123</p>
+            <p><strong>Email:</strong> info@greatermobileurgentcare.com</p>
+            <p><strong>Website:</strong> <a href="https://greatermobileurgentcare.com/" target="_blank" rel="noopener noreferrer">greatermobileurgentcare.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jonathan Calvarese</span> &mdash; Owner/Physician</li>
+              <li><span class="person-name">Terence M. Day</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Mobile Bay OB-GYN Center</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A patient-centered practice for women&#x27;s reproductive health.</p>
+            <p><strong>Address:</strong> 3715 Dauphin St # 3B, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 435-7900</p>
+            <p><strong>Email:</strong> info@mobilebayobgyncenter.com</p>
+            <p><strong>Website:</strong> <a href="https://mobilebayobgyncenter.com/" target="_blank" rel="noopener noreferrer">mobilebayobgyncenter.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Meg Gardner Heusser</span> &mdash; Physician</li>
+              <li><span class="person-name">Gary Heusser</span> &mdash; Manager</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Mobile Heart Specialists</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A cardiology practice focused on prevention and interventional care.</p>
+            <p><strong>Address:</strong> 6701 Airport Blvd Suite D330, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 433-4700</p>
+            <p><strong>Email:</strong> info@mobheart.com</p>
+            <p><strong>Website:</strong> <a href="https://mobheart.com/" target="_blank" rel="noopener noreferrer">mobheart.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Christopher S. Brown</span> &mdash; Physician</li>
+              <li><span class="person-name">Chad M. Alford</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Premier Medical Group</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A large group specializing in Eye and ENT care across the region.</p>
+            <p><strong>Address:</strong> 3701 Dauphin St, Mobile, AL 36608</p>
+            <p><strong>Phone:</strong> (251) 473-1900</p>
+            <p><strong>Email:</strong> info@premiermedicalgrp.com</p>
+            <p><strong>Website:</strong> <a href="https://premiermedicalgrp.com/" target="_blank" rel="noopener noreferrer">premiermedicalgrp.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Kimberly A. Elliott</span> &mdash; Physician</li>
+              <li><span class="person-name">Michael Rhodes Lee</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Sunrise Dermatology</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A skin care clinic offering medical, surgical, and cosmetic dermatology.</p>
+            <p><strong>Address:</strong> 801 University Blvd S Suite H, Mobile, AL 36609</p>
+            <p><strong>Phone:</strong> (251) 289-1786</p>
+            <p><strong>Email:</strong> info@sunrisederm.com</p>
+            <p><strong>Website:</strong> <a href="https://sunrisederm.com/" target="_blank" rel="noopener noreferrer">sunrisederm.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Scott Freeman</span> &mdash; Dermatologist</li>
+              <li><span class="person-name">Ryan Ramagosa</span> &mdash; Dermatologist</li>
             </ul>
           </div>
         </div>
@@ -225,7 +1285,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>Alabama Business Directory &copy; 2026. All dummy data shown is for demonstration purposes only.</p>
+      <p>Alabama Business Directory &copy; 2026. All rights reserved.</p>
     </div>
   </footer>
 
