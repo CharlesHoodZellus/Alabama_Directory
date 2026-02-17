@@ -39,12 +39,12 @@
         <label for="category-filter">Filter by Category:</label>
         <select id="category-filter" onchange="filterCategory()">
           <option value="all">All Categories</option>
-          <option value="legal">Legal</option>
-          <option value="medical">Medical</option>
-          <option value="home-services">Home Services</option>
           <option value="accounting">Accounting</option>
           <option value="engineering">Engineering</option>
           <option value="food-entertainment">Food &amp; Entertainment</option>
+          <option value="home-services">Home Services</option>
+          <option value="legal">Legal</option>
+          <option value="medical">Medical</option>
         </select>
       </div>
       <div class="search-group">
@@ -60,104 +60,241 @@
     <section class="city-section" data-city="birmingham">
       <h2 class="city-heading">All Birmingham Businesses</h2>
 
-      <!-- Legal -->
-      <div class="business-card" data-category="legal">
-        <div class="card-header">
-          <h3 class="business-name">Iron City Legal Partners</h3>
-          <span class="category-badge legal">Legal</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 1901 6th Ave N, Suite 400, Birmingham, AL 35203</p>
-            <p><strong>Phone:</strong> (205) 555-0101</p>
-            <p><strong>Email:</strong> info@ironcitylegal.example.com</p>
-            <p><strong>Website:</strong> www.ironcitylegal.example.com</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Robert Franklin</span> &mdash; Senior Partner<br>
-                <span class="contact-detail">robert.franklin@ironcitylegal.example.com</span> | <span class="contact-detail">(205) 555-0102</span></li>
-              <li><span class="person-name">Aisha Williams</span> &mdash; Associate Attorney<br>
-                <span class="contact-detail">aisha.williams@ironcitylegal.example.com</span> | <span class="contact-detail">(205) 555-0103</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Medical -->
-      <div class="business-card" data-category="medical">
-        <div class="card-header">
-          <h3 class="business-name">Southside Medical Associates</h3>
-          <span class="category-badge medical">Medical</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 710 20th St S, Birmingham, AL 35205</p>
-            <p><strong>Phone:</strong> (205) 555-0201</p>
-            <p><strong>Email:</strong> info@southsidemed.example.com</p>
-            <p><strong>Website:</strong> www.southsidemed.example.com</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Dr. Terrence Mitchell</span> &mdash; Medical Director<br>
-                <span class="contact-detail">terrence.mitchell@southsidemed.example.com</span> | <span class="contact-detail">(205) 555-0202</span></li>
-              <li><span class="person-name">Karen Russo</span> &mdash; Practice Administrator<br>
-                <span class="contact-detail">karen.russo@southsidemed.example.com</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Home Services -->
-      <div class="business-card" data-category="home-services">
-        <div class="card-header">
-          <h3 class="business-name">Magic City Plumbing &amp; Electric</h3>
-          <span class="category-badge home-services">Home Services</span>
-        </div>
-        <div class="card-body">
-          <div class="company-info">
-            <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 4500 5th Ave S, Birmingham, AL 35222</p>
-            <p><strong>Phone:</strong> (205) 555-0301</p>
-            <p><strong>Email:</strong> dispatch@magiccityplumbing.example.com</p>
-          </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Derek Simmons</span> &mdash; Owner<br>
-                <span class="contact-detail">derek@magiccityplumbing.example.com</span> | <span class="contact-detail">(205) 555-0302</span></li>
-              <li><span class="person-name">Tameka Johnson</span> &mdash; Scheduling Manager<br>
-                <span class="contact-detail">tameka@magiccityplumbing.example.com</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
       <!-- Accounting -->
       <div class="business-card" data-category="accounting">
         <div class="card-header">
-          <h3 class="business-name">Vulcan Financial Group</h3>
+          <h3 class="business-name">BMSS Advisors &amp; CPAs</h3>
           <span class="category-badge accounting">Accounting</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 2100 Riverchase Center, Birmingham, AL 35244</p>
-            <p><strong>Phone:</strong> (205) 555-0401</p>
-            <p><strong>Email:</strong> info@vulcanfinancial.example.com</p>
-            <p><strong>Website:</strong> www.vulcanfinancial.example.com</p>
+            <p><strong>About:</strong> A top 100 US accounting firm offering comprehensive tax, audit, and advisory services.</p>
+            <p><strong>Address:</strong> 300 Richard Arrington Jr Blvd N #100, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 982-5500</p>
+            <p><strong>Email:</strong> info@bmss.com</p>
+            <p><strong>Website:</strong> <a href="https://www.bmss.com/" target="_blank" rel="noopener noreferrer">www.bmss.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Gregory Harper</span> &mdash; Managing Director<br>
-                <span class="contact-detail">gregory.harper@vulcanfinancial.example.com</span> | <span class="contact-detail">(205) 555-0402</span></li>
-              <li><span class="person-name">Michelle Torres</span> &mdash; Senior Accountant<br>
-                <span class="contact-detail">michelle.torres@vulcanfinancial.example.com</span> | <span class="contact-detail">(205) 555-0403</span></li>
+              <li><span class="person-name">Keith Barfield</span> &mdash; Founding Member<br>
+                <span class="contact-detail">kbarfield@bmss.com</span></li>
+              <li><span class="person-name">Steve Smith</span> &mdash; Founding Member<br>
+                <span class="contact-detail">ssmith@bmss.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Banks, Finley, White &amp; Co.</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> One of the largest minority-owned CPA firms in the country, serving diverse industries.</p>
+            <p><strong>Address:</strong> 617 37th St S, Birmingham, AL 35222</p>
+            <p><strong>Phone:</strong> (205) 326-6660</p>
+            <p><strong>Email:</strong> info@bfwcpa.com</p>
+            <p><strong>Website:</strong> <a href="https://bfwcpa.com/" target="_blank" rel="noopener noreferrer">bfwcpa.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">James C. White</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">jimwhite@bfwcpa.com</span></li>
+              <li><span class="person-name">Jeffrey White</span> &mdash; Partner<br>
+                <span class="contact-detail">jwhite@bfwcpa.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Deloitte</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A global professional services firm with a major hub in downtown Birmingham.</p>
+            <p><strong>Address:</strong> 420 20th St N #2400, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 321-6000</p>
+            <p><strong>Email:</strong> info@deloitte.com</p>
+            <p><strong>Website:</strong> <a href="https://www2.deloitte.com/" target="_blank" rel="noopener noreferrer">www2.deloitte.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">J. Scott Lovelady</span> &mdash; Managing Partner</li>
+              <li><span class="person-name">Greg Self</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Ernst &amp; Young (EY)</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A Big Four accounting firm providing assurance, tax, and consulting services.</p>
+            <p><strong>Address:</strong> 1901 6th Ave N #1200, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 251-2000</p>
+            <p><strong>Email:</strong> info@ey.com</p>
+            <p><strong>Website:</strong> <a href="https://www.ey.com/" target="_blank" rel="noopener noreferrer">www.ey.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">K.C. Pang</span> &mdash; Office Managing Partner</li>
+              <li><span class="person-name">Lee D. Mitchell</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">KPMG LLP</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A global network of professional firms providing audit, tax, and advisory services.</p>
+            <p><strong>Address:</strong> 420 20th St N #1800, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 328-2086</p>
+            <p><strong>Email:</strong> info@kpmg.com</p>
+            <p><strong>Website:</strong> <a href="https://kpmg.com/" target="_blank" rel="noopener noreferrer">kpmg.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Chip Hoover</span> &mdash; Managing Partner</li>
+              <li><span class="person-name">John Romano</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Kassouf &amp; Co.</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A CPA and advisory firm specializing in healthcare, architecture, and engineering sectors.</p>
+            <p><strong>Address:</strong> 2101 Highland Ave S #300, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 443-2500</p>
+            <p><strong>Email:</strong> info@kassouf.com</p>
+            <p><strong>Website:</strong> <a href="https://kassouf.com/" target="_blank" rel="noopener noreferrer">kassouf.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jonathan Kassouf</span> &mdash; Director<br>
+                <span class="contact-detail">jkassouf@kassouf.com</span></li>
+              <li><span class="person-name">Gerard Kassouf</span> &mdash; Director<br>
+                <span class="contact-detail">gkassouf@kassouf.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Mauldin &amp; Jenkins, LLC</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A regional accounting firm providing audit, tax, and advisory services to the Southeast.</p>
+            <p><strong>Address:</strong> 2000 SouthBridge Pkwy #501, Birmingham, AL 35209</p>
+            <p><strong>Phone:</strong> (205) 445-2880</p>
+            <p><strong>Email:</strong> info@mjcpa.com</p>
+            <p><strong>Website:</strong> <a href="https://www.mjcpa.com/" target="_blank" rel="noopener noreferrer">www.mjcpa.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Hanson Borders</span> &mdash; Partner<br>
+                <span class="contact-detail">hborders@mjcpa.com</span></li>
+              <li><span class="person-name">Jeff Faucette</span> &mdash; Partner<br>
+                <span class="contact-detail">jfaucette@mjcpa.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Mayer LLP</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A full-service accounting firm delivering tailored financial solutions to businesses.</p>
+            <p><strong>Address:</strong> 2100 3rd Ave N #900, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 982-5555</p>
+            <p><strong>Email:</strong> info@mayerllp.com</p>
+            <p><strong>Website:</strong> <a href="https://mayerllp.com/" target="_blank" rel="noopener noreferrer">mayerllp.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jim Mayer</span> &mdash; Partner</li>
+              <li><span class="person-name">Ben Mayer</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">RSM US LLP</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A leading provider of audit, tax, and consulting services to the middle market.</p>
+            <p><strong>Address:</strong> 420 20th St N #2600, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 278-0001</p>
+            <p><strong>Email:</strong> info@rsmus.com</p>
+            <p><strong>Website:</strong> <a href="https://rsmus.com/" target="_blank" rel="noopener noreferrer">rsmus.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">D. Paul Jones</span> &mdash; Partner</li>
+              <li><span class="person-name">Brian Creek</span> &mdash; Partner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="accounting">
+        <div class="card-header">
+          <h3 class="business-name">Tidwell Group</h3>
+          <span class="category-badge accounting">Accounting</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A boutique accounting firm known for its expertise in the affordable housing industry.</p>
+            <p><strong>Address:</strong> 2001 Park Pl #900, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 271-5527</p>
+            <p><strong>Email:</strong> info@tidwellgroup.com</p>
+            <p><strong>Website:</strong> <a href="https://tidwellgroup.com/" target="_blank" rel="noopener noreferrer">tidwellgroup.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Barry Tidwell</span> &mdash; Managing Partner</li>
+              <li><span class="person-name">Josh Northcutt</span> &mdash; Partner</li>
             </ul>
           </div>
         </div>
@@ -166,25 +303,161 @@
       <!-- Engineering -->
       <div class="business-card" data-category="engineering">
         <div class="card-header">
-          <h3 class="business-name">Birmingham Structural Engineers</h3>
+          <h3 class="business-name">Bhate Environmental Associates</h3>
           <span class="category-badge engineering">Engineering</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 300 Richard Arrington Jr Blvd N, Birmingham, AL 35203</p>
-            <p><strong>Phone:</strong> (205) 555-0501</p>
-            <p><strong>Email:</strong> projects@bhamengineer.example.com</p>
-            <p><strong>Website:</strong> www.bhamengineer.example.com</p>
+            <p><strong>About:</strong> An environmental engineering and program management firm serving federal and commercial clients.</p>
+            <p><strong>Address:</strong> 1608 13th Ave S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 918-4000</p>
+            <p><strong>Email:</strong> info@bhate.com</p>
+            <p><strong>Website:</strong> <a href="https://www.bhate.com/" target="_blank" rel="noopener noreferrer">www.bhate.com</a></p>
           </div>
-          <div class="personnel">
-            <h4>Key Personnel</h4>
-            <ul>
-              <li><span class="person-name">Nicole Adams, PE</span> &mdash; Principal Engineer<br>
-                <span class="contact-detail">nicole.adams@bhamengineer.example.com</span> | <span class="contact-detail">(205) 555-0502</span></li>
-              <li><span class="person-name">Carlos Rivera</span> &mdash; Design Lead<br>
-                <span class="contact-detail">carlos.rivera@bhamengineer.example.com</span></li>
-            </ul>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Brasfield &amp; Gorrie</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> One of the nation&#x27;s largest privately held construction and engineering firms.</p>
+            <p><strong>Address:</strong> 3021 7th Ave S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 328-4000</p>
+            <p><strong>Email:</strong> info@brasfieldgorrie.com</p>
+            <p><strong>Website:</strong> <a href="https://www.brasfieldgorrie.com/" target="_blank" rel="noopener noreferrer">www.brasfieldgorrie.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Christy/Cobb, Inc.</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A woman-owned structural engineering firm with over 40 years of experience.</p>
+            <p><strong>Address:</strong> 2320 Highland Ave S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 933-1080</p>
+            <p><strong>Email:</strong> info@christycobb.com</p>
+            <p><strong>Website:</strong> <a href="https://www.christycobb.com/" target="_blank" rel="noopener noreferrer">www.christycobb.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Dynamic Civil Solutions</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A civil engineering consultancy focused on site development and municipal projects.</p>
+            <p><strong>Address:</strong> 2210 2nd Ave N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 358-7256</p>
+            <p><strong>Email:</strong> info@dcseng.com</p>
+            <p><strong>Website:</strong> <a href="https://dcseng.com/" target="_blank" rel="noopener noreferrer">dcseng.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Goodwyn Mills Cawood (GMC)</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A multidisciplinary architecture and engineering firm with a major design studio in Birmingham.</p>
+            <p><strong>Address:</strong> 2400 5th Ave S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 879-4462</p>
+            <p><strong>Email:</strong> info@gmcnetwork.com</p>
+            <p><strong>Website:</strong> <a href="https://www.gmcnetwork.com/" target="_blank" rel="noopener noreferrer">www.gmcnetwork.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Hains Engineering Company</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A mechanical and electrical engineering firm specializing in industrial systems.</p>
+            <p><strong>Address:</strong> 3928 3rd Ave S, Birmingham, AL 35222</p>
+            <p><strong>Phone:</strong> (205) 595-5835</p>
+            <p><strong>Email:</strong> info@hainsengineering.com</p>
+            <p><strong>Website:</strong> <a href="https://hainsengineering.com/" target="_blank" rel="noopener noreferrer">hainsengineering.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">LBYD Engineers</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A civil and structural engineering firm known for complex commercial and institutional projects.</p>
+            <p><strong>Address:</strong> 880 Montclair Rd, Birmingham, AL 35213</p>
+            <p><strong>Phone:</strong> (205) 488-0300</p>
+            <p><strong>Email:</strong> info@lbyd.com</p>
+            <p><strong>Website:</strong> <a href="https://www.lbyd.com/" target="_blank" rel="noopener noreferrer">www.lbyd.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">MBA Engineers, Inc.</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A structural engineering firm providing design services for buildings and special structures.</p>
+            <p><strong>Address:</strong> 300 20th St N #100, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 323-6385</p>
+            <p><strong>Email:</strong> info@mbasei.com</p>
+            <p><strong>Website:</strong> <a href="https://www.mbasei.com/" target="_blank" rel="noopener noreferrer">www.mbasei.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Schoel Engineering</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A civil engineering and surveying firm that has shaped Birmingham&#x27;s infrastructure since 1888.</p>
+            <p><strong>Address:</strong> 1001 2nd Ave S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 323-6166</p>
+            <p><strong>Email:</strong> info@schoel.com</p>
+            <p><strong>Website:</strong> <a href="https://schoel.com/" target="_blank" rel="noopener noreferrer">schoel.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="engineering">
+        <div class="card-header">
+          <h3 class="business-name">Southern Company Services</h3>
+          <span class="category-badge engineering">Engineering</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> The engineering and technical services division of the Southern Company energy utility.</p>
+            <p><strong>Address:</strong> 30 Ivan Ln, Birmingham, AL 35211</p>
+            <p><strong>Phone:</strong> (205) 257-1000</p>
+            <p><strong>Email:</strong> info@southerncompany.com</p>
+            <p><strong>Website:</strong> <a href="https://www.southerncompany.com/" target="_blank" rel="noopener noreferrer">www.southerncompany.com</a></p>
           </div>
         </div>
       </div>
@@ -192,23 +465,806 @@
       <!-- Food & Entertainment -->
       <div class="business-card" data-category="food-entertainment">
         <div class="card-header">
-          <h3 class="business-name">Five Points Grill &amp; Taproom</h3>
+          <h3 class="business-name">Automatic Seafood and Oysters</h3>
           <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
         </div>
         <div class="card-body">
           <div class="company-info">
             <h4>Company Contact</h4>
-            <p><strong>Address:</strong> 1035 20th St S, Birmingham, AL 35205</p>
-            <p><strong>Phone:</strong> (205) 555-0601</p>
-            <p><strong>Email:</strong> hello@fivepointsgrill.example.com</p>
+            <p><strong>About:</strong> An upscale seafood restaurant by Chef Adam Evans featuring Gulf coast ingredients.</p>
+            <p><strong>Address:</strong> 2824 5th Ave S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 580-1600</p>
+            <p><strong>Email:</strong> info@automaticseafood.com</p>
+            <p><strong>Website:</strong> <a href="https://www.automaticseafood.com/" target="_blank" rel="noopener noreferrer">www.automaticseafood.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Bottega</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A celebrated Italian restaurant by Chef Frank Stitt housed in a historic stone building.</p>
+            <p><strong>Address:</strong> 2240 Highland Ave, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 939-1000</p>
+            <p><strong>Email:</strong> info@bottegarestaurant.com</p>
+            <p><strong>Website:</strong> <a href="https://bottegarestaurant.com/" target="_blank" rel="noopener noreferrer">bottegarestaurant.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Cafe Dupont</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A bistro serving classic Southern cuisine in a renovated downtown storefront.</p>
+            <p><strong>Address:</strong> 113 20th St N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 322-1282</p>
+            <p><strong>Email:</strong> info@cafedupont.net</p>
+            <p><strong>Website:</strong> <a href="https://www.cafedupont.net/" target="_blank" rel="noopener noreferrer">www.cafedupont.net</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Chez Fonfon</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A bustling French bistro known for its authentic atmosphere and award-winning burger.</p>
+            <p><strong>Address:</strong> 2007 11th Ave S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 939-3221</p>
+            <p><strong>Email:</strong> info@fonfonbham.com</p>
+            <p><strong>Website:</strong> <a href="https://www.fonfonbham.com/" target="_blank" rel="noopener noreferrer">www.fonfonbham.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">El Barrio</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A vibrant multi-regional Mexican restaurant famous for its design and meatloaf.</p>
+            <p><strong>Address:</strong> 2211 2nd Ave N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 868-3737</p>
+            <p><strong>Email:</strong> info@elbarriobirmingham.com</p>
+            <p><strong>Website:</strong> <a href="https://elbarriobirmingham.com/" target="_blank" rel="noopener noreferrer">elbarriobirmingham.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Helen</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A contemporary Southern grill by Chef Rob McDaniel focused on wood-fired cooking.</p>
+            <p><strong>Address:</strong> 2013 2nd Ave N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 438-7000</p>
+            <p><strong>Email:</strong> info@helenbham.com</p>
+            <p><strong>Website:</strong> <a href="https://www.helenbham.com/" target="_blank" rel="noopener noreferrer">www.helenbham.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Hot and Hot Fish Club</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A James Beard Award-winning restaurant blending Southern, French, and California styles.</p>
+            <p><strong>Address:</strong> 2901 2nd Ave S #110, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 933-5474</p>
+            <p><strong>Email:</strong> info@hotandhotfishclub.com</p>
+            <p><strong>Website:</strong> <a href="https://www.hotandhotfishclub.com/" target="_blank" rel="noopener noreferrer">www.hotandhotfishclub.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Niki&#x27;s West</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A legendary cafeteria-style restaurant serving a vast array of Southern vegetables and meats.</p>
+            <p><strong>Address:</strong> 233 Finley Ave W, Birmingham, AL 35204</p>
+            <p><strong>Phone:</strong> (205) 252-5751</p>
+            <p><strong>Email:</strong> info@nikiswest.com</p>
+            <p><strong>Website:</strong> <a href="https://www.nikiswest.com/" target="_blank" rel="noopener noreferrer">www.nikiswest.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">Saw&#x27;s Soul Kitchen</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A casual BBQ joint in Avondale famous for its pork and greens and smoked wings.</p>
+            <p><strong>Address:</strong> 215 41st St S, Birmingham, AL 35222</p>
+            <p><strong>Phone:</strong> (205) 591-1409</p>
+            <p><strong>Email:</strong> info@sawsbbq.com</p>
+            <p><strong>Website:</strong> <a href="https://www.sawsbbq.com/" target="_blank" rel="noopener noreferrer">www.sawsbbq.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="food-entertainment">
+        <div class="card-header">
+          <h3 class="business-name">The Garage</h3>
+          <span class="category-badge food-entertainment">Food &amp; Entertainment</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A quirky bar and cafe known for its soups, sandwiches, and courtyard filled with antiques.</p>
+            <p><strong>Address:</strong> 2304 10th Terrace S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 322-3220</p>
+            <p><strong>Email:</strong> info@garagecafe.com</p>
+            <p><strong>Website:</strong> <a href="http://www.garagecafe.com/" target="_blank" rel="noopener noreferrer">www.garagecafe.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Services -->
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Craftsman Plumbing</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A residential and commercial plumbing service located in the Avondale district.</p>
+            <p><strong>Address:</strong> 4321 Morris Ave Suite E, Birmingham, AL 35222</p>
+            <p><strong>Phone:</strong> (205) 202-3925</p>
+            <p><strong>Email:</strong> info@craftsmanplumbing.com</p>
+            <p><strong>Website:</strong> <a href="https://craftsmanplumbing.com/" target="_blank" rel="noopener noreferrer">craftsmanplumbing.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Douglas Cooling &amp; Heating</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A family-owned HVAC company serving Birmingham residents for over 45 years.</p>
+            <p><strong>Address:</strong> 1229 3rd Ave N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 322-7940</p>
+            <p><strong>Email:</strong> info@douglascoolingandheating.com</p>
+            <p><strong>Website:</strong> <a href="https://douglascoolingandheating.com/" target="_blank" rel="noopener noreferrer">douglascoolingandheating.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Drain Go Plumbing</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A full-service plumbing company specializing in drain cleaning and emergency repairs.</p>
+            <p><strong>Address:</strong> 2011 11th Ave S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 250-9939</p>
+            <p><strong>Email:</strong> info@draingo.com</p>
+            <p><strong>Website:</strong> <a href="https://draingo.com/" target="_blank" rel="noopener noreferrer">draingo.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Freedom Heating and Cooling</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A veteran-owned HVAC contractor providing installation and maintenance services.</p>
+            <p><strong>Address:</strong> 2881 Shannon Oxmoor Rd, Birmingham, AL 35211</p>
+            <p><strong>Phone:</strong> (205) 444-4444</p>
+            <p><strong>Email:</strong> info@freedomhvacal.com</p>
+            <p><strong>Website:</strong> <a href="https://freedomhvacal.com/" target="_blank" rel="noopener noreferrer">freedomhvacal.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Guin Service, LLC</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A trusted plumbing and HVAC provider operating in Birmingham since 1958.</p>
+            <p><strong>Address:</strong> 10 35th St N, Birmingham, AL 35222</p>
+            <p><strong>Phone:</strong> (205) 595-4846</p>
+            <p><strong>Email:</strong> info@guinservice.com</p>
+            <p><strong>Website:</strong> <a href="https://www.guinservice.com/" target="_blank" rel="noopener noreferrer">www.guinservice.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Hiller Plumbing, Heating, Cooling &amp; Electrical</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A large regional home service company with a fully staffed local Birmingham branch.</p>
+            <p><strong>Address:</strong> 441 University Blvd, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 578-1234</p>
+            <p><strong>Email:</strong> info@happyhiller.com</p>
+            <p><strong>Website:</strong> <a href="https://happyhiller.com/" target="_blank" rel="noopener noreferrer">happyhiller.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">John&#x27;s Plumbing</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A long-standing plumbing repair service handling residential and commercial needs.</p>
+            <p><strong>Address:</strong> 5851 Service Rd, Birmingham, AL 35235</p>
+            <p><strong>Phone:</strong> (205) 655-5646</p>
+            <p><strong>Email:</strong> info@johnsplumbingbirmingham.com</p>
+            <p><strong>Website:</strong> <a href="https://johnsplumbingbirmingham.com/" target="_blank" rel="noopener noreferrer">johnsplumbingbirmingham.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">New Era Plumbing</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A professional plumbing team focused on new construction and major repairs.</p>
+            <p><strong>Address:</strong> 2900 Reverend Abraham Woods Jr Blvd, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 208-0100</p>
+            <p><strong>Email:</strong> info@neweraplumbing.com</p>
+            <p><strong>Website:</strong> <a href="https://neweraplumbing.com/" target="_blank" rel="noopener noreferrer">neweraplumbing.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Standard Heating, Cooling &amp; Plumbing</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A prominent HVAC and plumbing contractor with a service center in downtown Birmingham.</p>
+            <p><strong>Address:</strong> 520 8th St S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 322-2679</p>
+            <p><strong>Email:</strong> info@standardheatingandairconditioning.com</p>
+            <p><strong>Website:</strong> <a href="https://standardheatingandairconditioning.com/" target="_blank" rel="noopener noreferrer">standardheatingandairconditioning.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="home-services">
+        <div class="card-header">
+          <h3 class="business-name">Stegall Heating, Cooling, Plumbing &amp; Electrical</h3>
+          <span class="category-badge home-services">Home Services</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A comprehensive home service provider serving Birmingham since 1957.</p>
+            <p><strong>Address:</strong> 2800 5th Ave S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 251-0330</p>
+            <p><strong>Email:</strong> info@stegallheating.com</p>
+            <p><strong>Website:</strong> <a href="https://stegallheating.com/" target="_blank" rel="noopener noreferrer">stegallheating.com</a></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Legal -->
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Adams &amp; Reese LLP</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A multidisciplinary law firm with a strong focus on business and litigation.</p>
+            <p><strong>Address:</strong> 1901 6th Ave N #1100, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 250-5000</p>
+            <p><strong>Email:</strong> info@adamsandreese.com</p>
+            <p><strong>Website:</strong> <a href="https://www.adamsandreese.com/" target="_blank" rel="noopener noreferrer">www.adamsandreese.com</a></p>
           </div>
           <div class="personnel">
             <h4>Key Personnel</h4>
             <ul>
-              <li><span class="person-name">Anthony Bridges</span> &mdash; Owner / General Manager<br>
-                <span class="contact-detail">anthony@fivepointsgrill.example.com</span> | <span class="contact-detail">(205) 555-0602</span></li>
-              <li><span class="person-name">Jasmine Carter</span> &mdash; Events &amp; Catering<br>
-                <span class="contact-detail">jasmine@fivepointsgrill.example.com</span></li>
+              <li><span class="person-name">Todd D. Engelhardt</span> &mdash; Partner<br>
+                <span class="contact-detail">todd.engelhardt@arlaw.com</span></li>
+              <li><span class="person-name">Richard P. Carmody</span> &mdash; Counsel<br>
+                <span class="contact-detail">richard.carmody@arlaw.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Balch &amp; Bingham LLP</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A corporate law firm known for its work in energy, finance, and litigation.</p>
+            <p><strong>Address:</strong> 1901 6th Ave N #1500, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 251-8100</p>
+            <p><strong>Email:</strong> info@balch.com</p>
+            <p><strong>Website:</strong> <a href="https://www.balch.com/" target="_blank" rel="noopener noreferrer">www.balch.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Stan Blanton</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">sblanton@balch.com</span></li>
+              <li><span class="person-name">Alan Rogers</span> &mdash; Partner<br>
+                <span class="contact-detail">arogers@balch.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Bradley Arant Boult Cummings LLP</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> One of the Southeast&#x27;s largest law firms, headquartered in downtown Birmingham.</p>
+            <p><strong>Address:</strong> 1819 5th Ave N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 521-8000</p>
+            <p><strong>Email:</strong> info@bradley.com</p>
+            <p><strong>Website:</strong> <a href="https://www.bradley.com/" target="_blank" rel="noopener noreferrer">www.bradley.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jonathan Skeeters</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">jskeeters@bradley.com</span></li>
+              <li><span class="person-name">Dawn Helms Sharff</span> &mdash; Partner<br>
+                <span class="contact-detail">dsharff@bradley.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Burr &amp; Forman LLP</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A regional powerhouse firm with extensive experience in manufacturing and financial services.</p>
+            <p><strong>Address:</strong> 420 20th St N #3400, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 251-3000</p>
+            <p><strong>Email:</strong> info@burr.com</p>
+            <p><strong>Website:</strong> <a href="https://www.burr.com/" target="_blank" rel="noopener noreferrer">www.burr.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Ed Christian</span> &mdash; CEO<br>
+                <span class="contact-detail">echristian@burr.com</span></li>
+              <li><span class="person-name">Kignsley Taft</span> &mdash; Partner<br>
+                <span class="contact-detail">ktaft@burr.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Cory Watson Attorneys</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A nationally recognized personal injury firm fighting for consumer rights.</p>
+            <p><strong>Address:</strong> 2131 Magnolia Ave S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 328-2200</p>
+            <p><strong>Email:</strong> info@corywatson.com</p>
+            <p><strong>Website:</strong> <a href="https://www.corywatson.com/" target="_blank" rel="noopener noreferrer">www.corywatson.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Ernest Cory</span> &mdash; Managing Shareholder<br>
+                <span class="contact-detail">ecory@corywatson.com</span></li>
+              <li><span class="person-name">Leila Watson</span> &mdash; Shareholder<br>
+                <span class="contact-detail">lwatson@corywatson.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Farris, Riley &amp; Pitt, LLP</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A personal injury law firm dedicated to helping accident victims in Alabama.</p>
+            <p><strong>Address:</strong> 505 20th St N #1700, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 324-1212</p>
+            <p><strong>Email:</strong> info@frplegal.com</p>
+            <p><strong>Website:</strong> <a href="https://www.frplegal.com/" target="_blank" rel="noopener noreferrer">www.frplegal.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Kirby Farris</span> &mdash; Partner<br>
+                <span class="contact-detail">kfarris@frplegal.com</span></li>
+              <li><span class="person-name">Ken Riley</span> &mdash; Partner<br>
+                <span class="contact-detail">kriley@frplegal.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Hare, Wynn, Newell &amp; Newton, LLP</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A historic plaintiff&#x27;s firm with over 130 years of litigation experience.</p>
+            <p><strong>Address:</strong> 2025 3rd Ave N #800, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 328-5330</p>
+            <p><strong>Email:</strong> info@hwnn.com</p>
+            <p><strong>Website:</strong> <a href="https://www.hwnn.com/" target="_blank" rel="noopener noreferrer">www.hwnn.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Leon Ashford</span> &mdash; Partner<br>
+                <span class="contact-detail">leon@hwnn.com</span></li>
+              <li><span class="person-name">Scott Powell</span> &mdash; Partner<br>
+                <span class="contact-detail">scott@hwnn.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Holland &amp; Knight</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A global law firm with a Birmingham office focused on financial services and litigation.</p>
+            <p><strong>Address:</strong> 1901 6th Ave N #1400, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 226-5700</p>
+            <p><strong>Email:</strong> info@hklaw.com</p>
+            <p><strong>Website:</strong> <a href="https://www.hklaw.com/" target="_blank" rel="noopener noreferrer">www.hklaw.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Colin H. Luke</span> &mdash; Executive Partner<br>
+                <span class="contact-detail">colin.luke@hklaw.com</span></li>
+              <li><span class="person-name">James L. Phillips</span> &mdash; Partner<br>
+                <span class="contact-detail">jim.phillips@hklaw.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Lightfoot, Franklin &amp; White LLC</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A litigation-only law firm known for handling high-stakes complex cases.</p>
+            <p><strong>Address:</strong> 400 20th St N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 581-0700</p>
+            <p><strong>Email:</strong> info@lightfootlaw.com</p>
+            <p><strong>Website:</strong> <a href="https://www.lightfootlaw.com/" target="_blank" rel="noopener noreferrer">www.lightfootlaw.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Melody Eagan</span> &mdash; Managing Partner<br>
+                <span class="contact-detail">meagan@lightfootlaw.com</span></li>
+              <li><span class="person-name">Harlan Prater</span> &mdash; Partner<br>
+                <span class="contact-detail">hprater@lightfootlaw.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="legal">
+        <div class="card-header">
+          <h3 class="business-name">Maynard Nexsen</h3>
+          <span class="category-badge legal">Legal</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A full-service national law firm with deep roots in the Birmingham business community.</p>
+            <p><strong>Address:</strong> 1901 6th Ave N #2400, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 254-1000</p>
+            <p><strong>Email:</strong> info@maynardnexsen.com</p>
+            <p><strong>Website:</strong> <a href="https://www.maynardnexsen.com/" target="_blank" rel="noopener noreferrer">www.maynardnexsen.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Jeff Grantham</span> &mdash; Managing Shareholder<br>
+                <span class="contact-detail">jgrantham@maynardnexsen.com</span></li>
+              <li><span class="person-name">Jim Childs</span> &mdash; Shareholder<br>
+                <span class="contact-detail">jchilds@maynardnexsen.com</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Medical -->
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Alabama Regional Medical Services</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A community health center providing affordable primary and preventive care.</p>
+            <p><strong>Address:</strong> 712 25th St N, Birmingham, AL 35203</p>
+            <p><strong>Phone:</strong> (205) 407-5600</p>
+            <p><strong>Email:</strong> info@armsbham.com</p>
+            <p><strong>Website:</strong> <a href="https://armsbham.org/" target="_blank" rel="noopener noreferrer">armsbham.org</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Jeremiah Crider</span> &mdash; Physician</li>
+              <li><span class="person-name">Dr. Sharon McCarroll</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Birmingham VA Medical Center</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A major veterans&#x27; hospital providing comprehensive healthcare services to vets.</p>
+            <p><strong>Address:</strong> 700 19th St S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 933-8101</p>
+            <p><strong>Email:</strong> info@va.gov</p>
+            <p><strong>Website:</strong> <a href="https://www.va.gov/birmingham-health-care/" target="_blank" rel="noopener noreferrer">www.va.gov/birmingham-health-care</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Lisa Willett</span> &mdash; Chief of Staff</li>
+              <li><span class="person-name">Dr. O.J. Dailey</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Cooper Green Mercy Health Services</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A county-affiliated outpatient clinic serving Jefferson County residents.</p>
+            <p><strong>Address:</strong> 1515 6th Ave S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 930-3200</p>
+            <p><strong>Email:</strong> info@coopergreen.org</p>
+            <p><strong>Website:</strong> <a href="https://coopergreen.org/" target="_blank" rel="noopener noreferrer">coopergreen.org</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Raegan W. Durant</span> &mdash; Medical Director</li>
+              <li><span class="person-name">Dr. Walter Wilson</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Grandview Medical Center</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A modern 434-bed tertiary care hospital offering advanced medical technology.</p>
+            <p><strong>Address:</strong> 3690 Grandview Pkwy, Birmingham, AL 35243</p>
+            <p><strong>Phone:</strong> (205) 971-1000</p>
+            <p><strong>Email:</strong> info@grandviewhealth.com</p>
+            <p><strong>Website:</strong> <a href="https://www.grandviewhealth.com/" target="_blank" rel="noopener noreferrer">www.grandviewhealth.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Jeremy Rogers</span> &mdash; Physician</li>
+              <li><span class="person-name">Dr. Michael Hanaway</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Princeton Baptist Medical Center</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A community hospital known for its cardiology and orthopedic programs.</p>
+            <p><strong>Address:</strong> 701 Princeton Ave SW, Birmingham, AL 35211</p>
+            <p><strong>Phone:</strong> (205) 783-3000</p>
+            <p><strong>Email:</strong> info@brookwoodbaptisthealth.com</p>
+            <p><strong>Website:</strong> <a href="https://www.brookwoodbaptisthealth.com/" target="_blank" rel="noopener noreferrer">www.brookwoodbaptisthealth.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. William Sommerville</span> &mdash; Physician</li>
+              <li><span class="person-name">Dr. Andrew Duxbury</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Southview Medical Group</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A multi-specialty internal medicine practice located at St. Vincent&#x27;s.</p>
+            <p><strong>Address:</strong> 832 St Vincents Dr, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 933-4640</p>
+            <p><strong>Email:</strong> info@southviewmedical.com</p>
+            <p><strong>Website:</strong> <a href="https://southviewmedical.com/" target="_blank" rel="noopener noreferrer">southviewmedical.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. William Allen</span> &mdash; Physician</li>
+              <li><span class="person-name">Dr. Mack Barnes</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">St. Vincent&#x27;s Birmingham</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A faith-based acute care hospital with a focus on compassionate care.</p>
+            <p><strong>Address:</strong> 810 St Vincents Dr, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 939-7000</p>
+            <p><strong>Email:</strong> info@ascension.org</p>
+            <p><strong>Website:</strong> <a href="https://healthcare.ascension.org/" target="_blank" rel="noopener noreferrer">healthcare.ascension.org</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Andrew Cordover</span> &mdash; Physician</li>
+              <li><span class="person-name">Dr. James Hansen</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">The Kirklin Clinic of UAB Hospital</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A massive outpatient center housing hundreds of UAB medicine specialists.</p>
+            <p><strong>Address:</strong> 2000 6th Ave S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 934-3411</p>
+            <p><strong>Email:</strong> info@uabmedicine.org</p>
+            <p><strong>Website:</strong> <a href="https://www.uabmedicine.org/" target="_blank" rel="noopener noreferrer">www.uabmedicine.org</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Patricia Pritchett</span> &mdash; Physician</li>
+              <li><span class="person-name">Dr. Tony Jones</span> &mdash; Physician</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">Total Skin &amp; Beauty Dermatology</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> A comprehensive dermatology center offering medical and cosmetic treatments.</p>
+            <p><strong>Address:</strong> 2100 16th Ave S, Birmingham, AL 35205</p>
+            <p><strong>Phone:</strong> (205) 933-0987</p>
+            <p><strong>Email:</strong> info@totalskinandbeauty.com</p>
+            <p><strong>Website:</strong> <a href="https://totalskinandbeauty.com/" target="_blank" rel="noopener noreferrer">totalskinandbeauty.com</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Gary Monheit</span> &mdash; Dermatologist</li>
+              <li><span class="person-name">Dr. James Krell</span> &mdash; Dermatologist</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="business-card" data-category="medical">
+        <div class="card-header">
+          <h3 class="business-name">UAB Hospital</h3>
+          <span class="category-badge medical">Medical</span>
+        </div>
+        <div class="card-body">
+          <div class="company-info">
+            <h4>Company Contact</h4>
+            <p><strong>About:</strong> An internationally renowned academic medical center and Level 1 trauma center.</p>
+            <p><strong>Address:</strong> 1802 6th Ave S, Birmingham, AL 35233</p>
+            <p><strong>Phone:</strong> (205) 934-4011</p>
+            <p><strong>Email:</strong> info@uabmedicine.org</p>
+            <p><strong>Website:</strong> <a href="https://www.uabmedicine.org/" target="_blank" rel="noopener noreferrer">www.uabmedicine.org</a></p>
+          </div>
+          <div class="personnel">
+            <h4>Key Personnel</h4>
+            <ul>
+              <li><span class="person-name">Dr. Dawn Bulgarella</span> &mdash; CEO (System)</li>
+              <li><span class="person-name">Dr. Anupam Agarwal</span> &mdash; Dean of Medicine</li>
             </ul>
           </div>
         </div>
@@ -227,7 +1283,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>Alabama Business Directory &copy; 2026. All dummy data shown is for demonstration purposes only.</p>
+      <p>Alabama Business Directory &copy; 2026. All rights reserved.</p>
     </div>
   </footer>
 
