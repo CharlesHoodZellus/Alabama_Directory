@@ -16,6 +16,19 @@
     </div>
   </header>
 
+  <nav class="city-links-bar">
+    <div class="container">
+      <span class="city-links-label">Browse by City:</span>
+      <ul class="city-links-list">
+        <li><a href="cities/huntsville.html">Huntsville</a></li>
+        <li><a href="cities/birmingham.html">Birmingham</a></li>
+        <li><a href="cities/montgomery.html">Montgomery</a></li>
+        <li><a href="cities/mobile.html">Mobile</a></li>
+        <li><a href="cities/tuscaloosa.html">Tuscaloosa</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <nav class="filter-bar">
     <div class="container">
       <div class="filter-group">
@@ -46,19 +59,6 @@
         <input type="text" id="search-input" placeholder="Enter Search Term" onkeydown="if(event.key==='Enter')filterDirectory()">
         <button type="button" class="search-btn" onclick="filterDirectory()">Search</button>
       </div>
-    </div>
-  </nav>
-
-  <nav class="city-links-bar">
-    <div class="container">
-      <span class="city-links-label">Browse by City:</span>
-      <ul class="city-links-list">
-        <li><a href="cities/huntsville.html">Huntsville</a></li>
-        <li><a href="cities/birmingham.html">Birmingham</a></li>
-        <li><a href="cities/montgomery.html">Montgomery</a></li>
-        <li><a href="cities/mobile.html">Mobile</a></li>
-        <li><a href="cities/tuscaloosa.html">Tuscaloosa</a></li>
-      </ul>
     </div>
   </nav>
 
@@ -1177,8 +1177,10 @@
       </div>
     </section>
 
+    <div id="results-count" class="results-count"></div>
+
     <div id="no-results" class="no-results">
-      <p><strong>No businesses found.</strong></p>
+      <p><strong>No results found.</strong></p>
       <p>Try a different search term or adjust your filters.</p>
     </div>
 
@@ -1199,6 +1201,8 @@
       var sections = document.querySelectorAll('.city-section');
       var cards = document.querySelectorAll('.business-card');
       var noResults = document.getElementById('no-results');
+      var resultsCount = document.getElementById('results-count');
+      var isFiltering = (city !== 'all' || category !== 'all' || searchTerm !== '');
 
       // Show all sections first, then hide as needed
       sections.forEach(function(section) {
@@ -1232,9 +1236,25 @@
         section.style.display = visibleCards.length > 0 ? '' : 'none';
       });
 
+      // Toggle city headings based on filter state
+      var headings = document.querySelectorAll('.city-heading');
+      headings.forEach(function(heading) {
+        heading.style.display = isFiltering ? 'none' : '';
+      });
+
+      // Show results count when filtering
+      if (resultsCount) {
+        if (isFiltering && totalVisible > 0) {
+          resultsCount.style.display = '';
+          resultsCount.innerHTML = '<strong>' + totalVisible + '</strong> business' + (totalVisible !== 1 ? 'es' : '') + ' found';
+        } else {
+          resultsCount.style.display = 'none';
+        }
+      }
+
       // Show or hide "no results" message
       if (noResults) {
-        noResults.style.display = totalVisible === 0 ? '' : 'none';
+        noResults.style.display = (isFiltering && totalVisible === 0) ? '' : 'none';
       }
     }
   </script>
