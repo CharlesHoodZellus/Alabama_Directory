@@ -19,10 +19,10 @@
 
   <nav class="city-links-bar">
     <div class="container">
-      <span class="city-links-label">Browse by City:</span>
       <ul class="city-links-list">
         <li><a href="huntsville.html">Huntsville</a></li>
         <li><a href="birmingham.html">Birmingham</a></li>
+        <li><a href="montgomery.html" class="active">Montgomery</a></li>
         <li><a href="mobile.html">Mobile</a></li>
         <li><a href="tuscaloosa.html">Tuscaloosa</a></li>
         <li><a href="../index.html">All Cities</a></li>
@@ -1329,7 +1329,11 @@
       }
 
       if (noResults) {
-        noResults.style.display = (isFiltering && visibleCount === 0) ? '' : 'none';
+        if (isFiltering && visibleCount === 0) {
+          noResults.classList.add('visible');
+        } else {
+          noResults.classList.remove('visible');
+        }
       }
     }
   </script>
