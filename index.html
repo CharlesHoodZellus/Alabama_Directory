@@ -18,7 +18,6 @@
 
   <nav class="city-links-bar">
     <div class="container">
-      <span class="city-links-label">Browse by City:</span>
       <ul class="city-links-list">
         <li><a href="cities/huntsville.html">Huntsville</a></li>
         <li><a href="cities/birmingham.html">Birmingham</a></li>
@@ -6168,10 +6167,7 @@
       var totalVisible = 0;
 
       cards.forEach(function(card) {
-        // When a search term is active, show matches from ALL cities
-        var matchCity = searchTerm
-          ? true
-          : (city === 'all' || card.getAttribute('data-city') === city);
+        var matchCity = (city === 'all' || card.getAttribute('data-city') === city);
         var matchCat = (category === 'all' || card.getAttribute('data-category') === category);
 
         // Text search: match against all visible text in the card
@@ -6210,7 +6206,11 @@
 
       // Show or hide "no results" message
       if (noResults) {
-        noResults.style.display = (isFiltering && totalVisible === 0) ? '' : 'none';
+        if (isFiltering && totalVisible === 0) {
+          noResults.classList.add('visible');
+        } else {
+          noResults.classList.remove('visible');
+        }
       }
     }
   </script>
