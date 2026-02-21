@@ -19,6 +19,7 @@
   <nav class="city-links-bar">
     <div class="container">
       <ul class="city-links-list">
+        <li><a href="index.html" class="active">All Cities</a></li>
         <li><a href="cities/huntsville.html">Huntsville</a></li>
         <li><a href="cities/birmingham.html">Birmingham</a></li>
         <li><a href="cities/montgomery.html">Montgomery</a></li>
@@ -6139,6 +6140,8 @@
       <p>Try a different search term or adjust your filters.</p>
     </div>
 
+    <div id="pagination" class="pagination"></div>
+
   </main>
 
   <footer class="site-footer">
@@ -6148,7 +6151,16 @@
   </footer>
 
   <script>
+    var ITEMS_PER_PAGE = 20;
+    var currentPage = 1;
+    var matchedCards = [];
+
     function filterDirectory() {
+      currentPage = 1;
+      applyFilter();
+    }
+
+    function applyFilter() {
       var city = document.getElementById('city-filter').value;
       var category = document.getElementById('category-filter').value;
       var searchTerm = document.getElementById('search-input').value.trim().toLowerCase();
@@ -6159,30 +6171,43 @@
       var resultsCount = document.getElementById('results-count');
       var isFiltering = (city !== 'all' || category !== 'all' || searchTerm !== '');
 
-      // Show all sections first, then hide as needed
-      sections.forEach(function(section) {
-        section.style.display = '';
-      });
-
-      var totalVisible = 0;
-
+      // Build list of matched cards in DOM order
+      matchedCards = [];
       cards.forEach(function(card) {
         var matchCity = (city === 'all' || card.getAttribute('data-city') === city);
         var matchCat = (category === 'all' || card.getAttribute('data-category') === category);
 
-        // Text search: match against all visible text in the card
         var matchSearch = true;
         if (searchTerm) {
           var cardText = card.textContent.toLowerCase();
           matchSearch = cardText.indexOf(searchTerm) !== -1;
         }
 
-        var visible = matchCity && matchCat && matchSearch;
-        card.style.display = visible ? '' : 'none';
-        if (visible) totalVisible++;
+        if (matchCity && matchCat && matchSearch) {
+          matchedCards.push(card);
+        }
       });
 
-      // Hide city sections that have zero visible cards
+      var totalVisible = matchedCards.length;
+      var totalPages = Math.ceil(totalVisible / ITEMS_PER_PAGE);
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      var startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
+      var endIdx = startIdx + ITEMS_PER_PAGE;
+
+      // Hide all cards first, then show only the ones on the current page
+      cards.forEach(function(card) {
+        card.style.display = 'none';
+      });
+
+      for (var i = 0; i < matchedCards.length; i++) {
+        if (i >= startIdx && i < endIdx) {
+          matchedCards[i].style.display = '';
+        }
+      }
+
+      // Show/hide city sections based on whether they have visible cards
       sections.forEach(function(section) {
         var visibleCards = section.querySelectorAll('.business-card:not([style*="display: none"])');
         section.style.display = visibleCards.length > 0 ? '' : 'none';
@@ -6212,7 +6237,65 @@
           noResults.classList.remove('visible');
         }
       }
+
+      // Render pagination
+      renderPagination(totalVisible, totalPages);
     }
+
+    function renderPagination(totalVisible, totalPages) {
+      var paginationEl = document.getElementById('pagination');
+      paginationEl.innerHTML = '';
+
+      if (totalVisible <= ITEMS_PER_PAGE) {
+        return;
+      }
+
+      // Previous button
+      var prevBtn = document.createElement('button');
+      prevBtn.textContent = '\u2039 Prev';
+      prevBtn.disabled = (currentPage === 1);
+      prevBtn.addEventListener('click', function() {
+        if (currentPage > 1) {
+          currentPage--;
+          applyFilter();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+      paginationEl.appendChild(prevBtn);
+
+      // Page number buttons
+      for (var i = 1; i <= totalPages; i++) {
+        var btn = document.createElement('button');
+        btn.textContent = i;
+        if (i === currentPage) {
+          btn.classList.add('active');
+        }
+        btn.addEventListener('click', (function(page) {
+          return function() {
+            currentPage = page;
+            applyFilter();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          };
+        })(i));
+        paginationEl.appendChild(btn);
+      }
+
+      // Next button
+      var nextBtn = document.createElement('button');
+      nextBtn.textContent = 'Next \u203A';
+      nextBtn.disabled = (currentPage === totalPages);
+      nextBtn.addEventListener('click', function() {
+        if (currentPage < totalPages) {
+          currentPage++;
+          applyFilter();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+      paginationEl.appendChild(nextBtn);
+    }
+
+    // Initial load: apply pagination
+    applyFilter();
   </script>
 
 </body>
